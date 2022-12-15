@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .bg-body {
+    @apply
+      bg-white;
+      dark:bg-gray-2;
+  }
+
+  body {
+    @apply 
+      select-none duration-150
+      dark:text-white dark:bg-gray-dark2
+    ;
+  }
+
+  main {
+    @apply 
+      dark:bg-gray-dark2;
+  }
+
+  a {
+    @apply text-primary font-semibold;
+  }
+  
+  footer {
+    @apply 
+      bg-gray-3
+      dark:bg-gray-dark3
+    ;
+  }
+
+  ::-webkit-scrollbar {
+    @apply 
+      bg-gray-2 h-1 w-2
+      dark:bg-gray-dark1
+    ;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply 
+      bg-secondary rounded-full
+      hover:bg-primary
+      dark:bg-secondary-dark 
+      dark:hover:bg-primary
+    ;
+  }
+
+  .consolas {
+    @apply font-bold;
+    font-family: 'Consolas';
+  }
+
+  .hero {
+    @apply 
+      flex flex-col justify-center items-center text-center px-5 py-20 min-h-screen bg-gray-2
+      dark:bg-gray-dark1
+    ;
+  }
+
+  .hero-img {
+    @apply 
+      mb-10 border-4 border-primary p-3 rounded-full
+      md:border-8
+    ;
+  }
+
+  .section-container {
+    @apply 
+      container mx-auto px-6 py-10
+      xl:px-20
+    ;
+  }
+
+  .section-header {
+    @apply 
+      text-primary text-3xl consolas text-center mb-2
+      sm:text-5xl
+      dark:text-primary-dark
+    ;
+  }
+
+  .about-section {
+    @apply xl:w-5/6;
+  }
+
+  .recent-projects-section {
+    @apply bg-gray-1
+  }
+
+  .contact-links a {
+    @apply 
+      text-secondary inline-block text-4xl duration-150 
+      hover:text-primary 
+    ;
+  }
+
+  .contact-links a:not(:last-child) {
+    @apply mr-5;
+  }
+
+  .card {
+    @apply 
+      border bg-white rounded
+      dark:bg-gray-dark3
+    ;
+  }
+
+  .card .card-image {
+    @apply h-48 bg-muted bg-top bg-cover bg-no-repeat rounded-t;
+  }
+
+  .card .card-body {
+    @apply px-4 py-4;
+  }
+
+  .card .card-title {
+    @apply 
+      text-secondary text-xl font-semibold consolas
+      dark:text-white
+    ;
+  }
+
+  .card .card-description {
+    @apply text-muted font-light;
+  }
+
+  .card .card-badges {
+    @apply mt-2 flex gap-1 flex-wrap;
+  }
+
+  .card .card-badge {
+    @apply 
+      border border-primary px-2 py-1 text-xs rounded
+      hover:text-white hover:bg-primary
+    ;
+  }
+
+  .footer-content {
+    @apply 
+      container mx-auto px-5 py-5 grid grid-cols-1 md:grid-cols-3
+      xl:px-20
+    ;
+  }
+
+  .btn {
+    @apply inline-block px-6 py-3 text-white rounded consolas duration-150;
+  }
+
+  .btn-primary {
+    @apply 
+      btn bg-primary text-xl
+      /* hover:bg-primary-dark */
+      dark:bg-primary-dark
+    ;
+  }
+
+  .nav-tabs {
+    @apply flex flex-row md:flex-col mb-5 md:mb-0 overflow-y-hidden;
+  }
+
+  .nav-tabs .nav-link {
+    @apply 
+      px-5 py-2 consolas inline-block w-full text-center border border-transparent rounded mr-1 mb-0
+      md:mb-1 md:mr-0
+      hover:border-primary hover:text-primary
+      dark:text-primary-dark
+      dark:hover:border-primary-dark
+    ;
+  }
+
+  .nav-tabs .nav-link.active {
+    @apply 
+      bg-primary text-white
+      dark:bg-primary-dark
+    ;
+  }
+
+  .tab-content .tab-pane {
+    @apply md:px-5 hidden;
+  }
+
+  .tab-content .tab-pane.show {
+    @apply block;
+  }
+
+  .tab-pane .pane-section:not(:last-child) {
+    @apply mb-5;
+  }
+  
+  .careers .careers-title, .skills .skills-title, .education .education-title {
+    @apply 
+      consolas text-primary leading-5 text-lg
+      md:text-xl
+      dark:text-primary-dark
+    ;
+  }
+
+  .careers .careers-city, .skills .skills-subtitle, .education .education-city {
+    @apply font-semibold;
+  }
+
+  .careers .careers-timeframe, .education .education-timeframe {
+    @apply text-muted text-sm consolas;
+  }
+
+  .careers .careers-list {
+    @apply ml-6 my-3 list-disc list-outside;
+  }
+
+  .skills .skills-tech-stack {
+    @apply flex flex-wrap gap-2 my-2;
+  }
+
+  .skills .skills-tech-stack i {
+    @apply inline-block text-5xl;
+  }
+
+  .education .education-logo {
+    @apply mr-4;
+  }
+
+  .education .education-logo img {
+    @apply w-14;
+  }
+
+  .noscript-container {
+    @apply min-h-screen w-screen flex justify-center items-center fixed z-50 top-0 left-0 overflow-y-hidden overflow-x-hidden;
+  }
+}

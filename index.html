@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6691F5">
+  
+  <title>PrensDev - Jetsun Prince Torres | My Portfolio</title>
+  
+  <link rel="icon" href="./public/img/avatar.gif">
+  <link rel="stylesheet" href="./public/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+  <!-- If no script -->
+  <noscript>
+    <div class="noscript-container">
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl mb-3 font-light">
+          Hi, This is 
+          <span class="consolas">
+            <span>Prens<span class="text-primary">Dev</span></span>
+          </span>
+        </div>
+        <div class="text-muted font-light">I'm sorry but my portfolio requires some JavaScript.</div>
+        <div class="text-muted font-light">Please enable it then reload.</div>
+      </div>
+    </div>
+  </noscript>
+
+  <!-- Body -->
+  <main class="hidden">
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <!-- Image -->
+      <div class="hero-img">
+        <img 
+          class="rounded-full w-40 h-40 md:w-52 md:h-52" 
+          src="./public/img/avatar.jpg" 
+          alt="My Profile Picture" 
+          draggable="false"
+          title="Hi! I am Jetsun Prince Torres"
+        />
+      </div>
+
+      <!-- Text -->
+      <div class="text-lg">Hello World! I am</div>
+      <div class="text-4xl md:text-7xl font-semibold consolas">
+        <span class="text-muted"><</span> 
+        <span id="heroUsername">Prens<span class="text-primary dark:text-primary">Dev</span></span>
+        <span class="text-muted">/></span> 
+      </div>
+      <p class="md:text-xl font-light text-muted">Software Developer / UI/UX Design Passionate / Computer Programmer</p>
+      <div class="mt-5"></div>
+      
+      <div class="text-xl consolas">Jetsun Prince Torres</div>
+
+      <button class="btn-primary" data-toggle="displayMode" type="button">Light/Dark Mode Toggler</button>
+
+    </section>
+
+    <!-- About -->
+    <section class="section-container about-section">
+      <h1 class="section-header" id="about">About Me</h1>
+      <p class="md:text-xl font-light mb-5">Hi everyone! My name is <span class="text-secondary dark:text-secondary-dark consolas">Jetsun Prince Torres</span>. I am a Filipino Software Developer, UI/UX Design Passionate, and Computer Programmer. I aspire to be a Full-Stack Developer. </p>
+      <p class="md:text-xl font-light">I build innovate, modern, and integrative technologies that provide solutions for the real-world problems.</p>
+      
+      <div class="grid grid-row-1 md:grid-cols-12 mt-10">
+        
+        <!-- Nav Tabs -->
+        <ul class="nav-tabs md:col-span-2" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" role="button" data-toggle="tab" data-target="#careersPane">Career</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" role="button" data-toggle="tab" data-target="#skillsPane">Skills</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" role="button" data-toggle="tab" data-target="#educationPane">Education</a>
+          </li>
+        </ul>
+
+        <!-- Nav Panes -->
+        <div class="tab-content md:border-l border-dark md:ml-5 md:col-span-10 font-light">
+
+          <!-- Career -->
+          <div class="tab-pane careers show" id="careersPane">
+            <div class="pane-section">
+              <div class="careers-title">Software Developer, Manual Tester (Intern)</div>
+              <div class="careers-city">Sure AX, New South Wales, Australia</div>
+              <div class="careers-timeframe">April 2022 - Present</div>
+  
+              <ul class="careers-list">
+                <li>Project: Extension Project Management System</li>
+                <li>Responsible for identifying and developing the user interface, structure, and design of web pages</li>
+                <li>Responsible for leading the team in terms of front-end development</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="careers-title">Lead Front-end Developer (Intern)</div>
+              <div class="careers-city">Polytechnic University of the Philippines, Quezon City</div>
+              <div class="careers-timeframe">March 2022 - July 2022</div>
+  
+              <ul class="careers-list">
+                <li>Project: Extension Project Management System</li>
+                <ul>
+                  <li>Responsible for identifying and developing the user interface, structure, and design of web pages</li>
+                  <li>Responsible for leading the team in terms of front-end development</li>
+                </ul>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Skills -->
+          <div class="tab-pane skills" id="skillsPane">
+            <div class="pane-section">
+              <div class="skills-title">Technical Skills</div>
+              
+              <div class="skills-subtitle">Front-end Development</div>
+              <div class="skills-tech-stack">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-xd-plain colored"></i>
+              </div>
+              <p class="mb-5">I equipped myself with a thorough understanding of the structure, design, and use of markup languages and stylesheets, respectively, HTML and CSS, in the creation of modern web pages. This also includes having knowledge of building responsive web designs and an understanding of the concept of a mobile-first approach. I built web applications through the implementation of user-interface design concepts and principles that produce a user-centered product.</p>
+              <p class="mb-5">I am also knowledgable in making wireframes and prototypes for builing the initial sturture, design, and flow of processes.</p>
+
+              <div class="skills-subtitle">Back-end Development</div>
+              <div class="skills-tech-stack">
+                <i class="devicon-nodejs-plain colored"></i>
+                <i class="devicon-php-plain colored"></i>
+                <i class="devicon-mysql-plain-wordmark colored"></i>
+                <i class="devicon-microsoftsqlserver-plain"></i>
+              </div>
+              <p class="mb-5">I have experience of building the server-side of web applications, especially the handling of user data and requests, managing databases, constructing APIs, and business process and application logic. This also includes having knowledge of maintaining the security of web applications against cyberattacks and keeping the privacy and integrity of user data.</p>
+
+              <div class="skills-subtitle">Libraries and Frameworks</div>
+              <div class="skills skills-tech-stack">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <i class="devicon-jquery-plain colored"></i>
+                <i class="devicon-tailwindcss-plain colored"></i>
+                <i class="devicon-express-original"></i>
+                <i class="devicon-sequelize-plain colored"></i>
+                <i class="devicon-codeigniter-plain colored"></i>
+                <i class="devicon-fastapi-plain colored"></i>
+              </div>
+              <p class="mb-5">I extend my knowledge by learning about different common libraries and frameworks to speed up my development, use already available technologies for specific problems, and lessen the effort of reproducing source codes, which effectively reduces time and cost in developing web applications.</p>
+              
+              <div class="skills-subtitle">Computer Programming</div>
+              <div class="skills-tech-stack">
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+                <i class="devicon-python-plain colored"></i>
+                <i class="devicon-c-plain colored"></i>
+                <i class="devicon-java-plain colored"></i>
+              </div>
+              <p class="mb-5">I made myself familiar with the fundamentals of computer programming, especially with the concept of data structures, algorithms, debugging, and object-oriented programming with different computer languages.</p>
+              
+              <div class="skills-subtitle">Source Code Management and Version Control</div>
+              <div class="skills-tech-stack">
+                <i class="devicon-vscode-plain colored"></i>
+                <i class="devicon-git-plain colored"></i>
+                <i class="devicon-github-original"></i>
+                <i class="devicon-bitbucket-original colored"></i>
+              </div>
+              <p class="mb-5">I also include having a knowledge in managing source codes and version control using Git.</p>
+            </div>
+
+            <div class="pane-section">
+              <div class="skills-title">Professional and Soft Skills</div>
+              
+              <div class="skills-subtitle">Project Management and Agile Methodology</div>
+              <div class="skills-tech-stack">
+                <i class="devicon-trello-plain colored" title="Trello"></i>
+                <i class="devicon-jira-plain colored" title="Jira"></i>
+                <i class="devicon-confluence-original colored" title="Confluence"></i>
+              </div>
+
+              <div class="skills-subtitle">Analytical and Critical Thinking</div>
+              <div class="skills-subtitle">Team Player</div>
+              <div class="skills-subtitle">Responsible and Productive</div>
+              <div class="skills-subtitle">Eagerness to Learn New Things</div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="tab-pane education careers" id="educationPane">
+            <div class="pane-section">
+              <div class="education-title">Polytechnic University of the Philippines - College</div>
+              <div class="education-city">Quezon City, Metro Manila</div>
+              <div class="education-timeframe">June 2018 - September 2022</div>
+
+              <ul class="careers-list">
+                <li>Graduated with a degree of Bachelor of Science in Information Technology</li>
+                <li>Magna Cum Laude</li>
+                <li>Consistent President Lister</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="education-title">Our Lady of Fatima University - Senior High School</div>
+              <div class="education-city">Quezon City, Metro Manila</div>
+              <div class="education-timeframe">June 2016 - March 2018</div>
+
+              <ul class="careers-list">
+                <li>Strand Taken: Science, Technology, Engineering, and Mathematics (STEM)</li>
+                <li>Academic Excellence Achiever</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="education-title">Bignay National High School - Junior High School</div>
+              <div class="education-city">Valenzuela City, Metro Manila</div>
+              <div class="education-timeframe">June 2012 - March 2016</div>
+
+              <ul class="careers-list">
+                <li>Third Place in Web Designing - Division Technolympics, Valenzuela City</li>
+                <li>Started my passion as a web developer</li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- Projects -->
+    <section class="section-container recent-projects-section">
+      <h1 class="section-header" id="recent-projects">Recent Projects</h1>
+      
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-y-4 gap-x-6 mt-8" id="projectList">
+        <a href="https://github.com/PrensDev/vaxxtrack" target="_blank" class="card">
+          <div class="card-image" style="background: url('https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true')"></div>
+          <div class="card-body">
+            <div class="card-title">VaxxTrack</div>
+            <div class="card-description">A COVID-19 Contact Tracing App and Vaccine Monitoring System</div>
+            <div class="card-badges">
+              <div class="card-badge">CodeIgniter 3</div><div class="card-badge">Bootstrap 4</div><div class="card-badge">Sequelize ORM</div><div class="card-badge">Leaflet</div><div class="card-badge">PSGC API</div><div class="card-badge">HERE API</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-container py-40 contact-section">
+      <h1 class="section-header" id="about">Get in touch</h1>
+      <div class="text-center mt-14">
+        <a 
+          class="btn-primary"
+          href="mailto:jetsunprincetorres@gmail.com" 
+          title="Email me!" 
+          rel="me" 
+          target="_blank"
+        >Say hello 👋 !</a>
+      </div>
+
+      <!-- Contact Links -->
+      <div class="mt-5 text-center contact-links">
+
+        <!-- Github -->
+        <a href="https://github.com/PrensDev" target="_blank" title="My Github Profile">
+          <i class="devicon-github-original"></i>
+        </a>
+
+        <!-- Linked In -->
+        <a href="https://www.linkedin.com/in/jetsunprince/" target="_blank" title="My LinkedIn Profile">
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="hidden">
+    <div class="footer-content">
+      <div class="consolas text-center md:text-left" id="credits"></div>
+      <div class="text-sm text-center" title="Very lightweight!">Built and designed by Myself</div>
+      <div class="text-sm text-center md:text-right">
+        with 
+        <a href="https://tailwindcss.com/" target="_blank">
+          <i class="devicon-tailwindcss-plain colored"></i>
+          tailwindcss
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./src/js/index.js"></script>
+</body>
+</html>
