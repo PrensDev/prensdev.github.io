@@ -5,7 +5,13 @@
   "main": "index.html",
   "scripts": {
     "build-css": "postcss ./src/css/styles.css -o ./public/css/styles.css",
-    "watch-css": "postcss ./src/css/styles.css -o ./public/css/styles.css --watch"
+    "build-html": "gulp build_html",
+    "build-js": "gulp build_js",
+    "watch-css": "postcss ./src/css/styles.css -o ./public/css/styles.css --watch",
+    "watch-html": "gulp watch_html",
+    "watch-js": "gulp watch_js",
+    "dev": "concurrently --kill-others \"npm run watch-html\" \"npm run watch-css\" \"npm run watch-js\"",
+    "build": "concurrently --kill-others \"npm run build-html\" \"npm run build-css\" \"npm run build-js\""
   },
   "repository": {
     "type": "git",
@@ -20,8 +26,17 @@
   "homepage": "https://github.com/PrensDev/prensdev.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "concurrently": "^7.6.0",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
+    "postcss-import": "^15.1.0",
     "tailwindcss": "^3.1.8"
   }
 }

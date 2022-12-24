@@ -57,6 +57,21 @@
     displayModeToggler_btn.innerHTML = newDisplayMode;
   })
 
+  // * For Topbar
+
+  document.querySelectorAll('.topbar-link').forEach(item => {
+    item.addEventListener('click', e => {
+      e.preventDefault();
+      const link = item.getAttribute('href');
+      const sectionY = document.querySelector(link).offsetTop;
+      const topbarHeight = document.querySelector('.topbar').offsetHeight;
+      window.scrollTo({
+          top: sectionY - topbarHeight,
+          behavior: "smooth"
+      })
+    })
+  })
+
   // * For Hero Username
 
   const USERNAME = 'PrensDev';
@@ -71,72 +86,7 @@
     });
   }, 500);
 
-  //* For Project List
-  
-  const projectList = document.getElementById('projectList');
-  const projects = [
-    {
-      title: 'VaxxTrack',
-      description: 'A COVID-19 Contact Tracing App and Vaccine Monitoring System',
-      image_url: 'https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true',
-      link: 'https://github.com/PrensDev/vaxxtrack',
-      tech_stack: ['CodeIgniter 3', 'Bootstrap 4', 'Sequelize ORM', 'Leaflet', 'PSGC API', 'HERE API']
-    }, 
-    {
-      title: 'ABN Job Portal',
-      description: 'Simple Job Portal Web Application',
-      image_url: 'https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true',
-      link: 'https://github.com/PrensDev/ABN-Job-Portal',
-      tech_stack: ['CodeIgniter 3', 'Bootstrap 4', 'Microsoft SQL Server']
-    }, 
-    {
-      title: 'MS Word Filipino',
-      description: 'Static Web App to train Filipinos in using MS Word with the use of Filipino language',
-      image_url: 'https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/what_word.png?raw=true',
-      link: 'https://github.com/PrensDev/MSWordFilipino',
-      tech_stack: ['PHP', 'Bootstrap 4']
-    }, 
-    {
-      title: 'PUPQC-EPMS',
-      description: 'Extension Project Management System for the PUPQC',
-      image_url: '',
-      link: 'https://github.com/PrensDev/MSWordFilipino',
-      tech_stack: ['Bootstrap 4', 'EJS', 'Sequelize ORM']
-    }, 
-    {
-      title: 'Hospital Recruitment Management System',
-      description: 'Recruitment Management System designed for a hospital',
-      image_url: '',
-      link: 'https://github.com/PrensDev/MSWordFilipino',
-      tech_stack: ['FastAPI', 'Python', 'Bootstrap 4']
-    }, 
-    {
-      title: 'PUPSIS App',
-      description: 'Mobile Application with WebView for rendering PUP-SIS',
-      image_url: '',
-      link: 'https://github.com/PrensDev/MSWordFilipino',
-      tech_stack: ['Flutter']
-    }, 
-  ]
-  
-  projectList.innerHTML = '';
-  
-  projects.forEach(project => {
-    projectList.innerHTML += `
-      <a href="${ project.link }" target="_blank" class="card">
-        ${ project.image_url ? `<div class="card-image" style="background: url('${ project.image_url }')"></div>` : '' }
-        <div class="card-body">
-          <div class="card-title">${ project.title }</div>
-          <div class="card-description">${ project.description }</div>
-          <div class="card-badges">
-            ${ project.tech_stack ? project.tech_stack.map(tech => `<div class="card-badge">${ tech }</div>`).join('') : '' }
-          </div>
-        </div>
-      </a>
-    `;
-  })
-
-  // * For Navigation Panes
+  // * For Tab Panes
 
   document.querySelectorAll(`[data-toggle='tab']`).forEach(elem => {
     const dataTarget = document.querySelector(elem.getAttribute('data-target'));

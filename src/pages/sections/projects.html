@@ -1,0 +1,110 @@
+<section class="section bg-gray-100" id="projects">
+  <div class="section-container">
+    @@include('../components/section_header.html', {
+      "section_name": "Projects",
+      "icon": '<i class="fa-solid fa-diagram-project"></i>'
+    })
+  
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true" alt="" draggable="false">
+      </div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">VaxxTrack & VaxxTrack API</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Bootstrap 4" },
+            { "name": "CodeIgniter 3" },
+            { "name": "jQuery" },
+            { "name": "Moment JS" },
+            { "name": "Leaflet" },
+            { "name": "Heatmap JS" },
+            { "name": "PSGC API" },
+            { "name": "HERE API" },
+            { "name": "Node JS" },
+            { "name": "Express" },
+            { "name": "Sequelize ORM" },
+          ])
+        </div>
+  
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
+            <i class="devicon-github-original mr-1"></i>
+            Vaxxtrack
+          </a>
+          <a class="btn" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
+            <i class="devicon-github-original mr-1"></i>
+            Vaxxtrack API
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="project-item">
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">ABN Job Portal</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Bootstrap 4" },
+            { "name": "CodeIgniter 3" },
+            { "name": "jQuery" },
+            { "name": "Moment JS" },
+            { "name": "MS SQL" },
+          ])
+        </div>
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank">
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
+      </div>
+      
+    </div>
+
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true" alt="" draggable="false">
+      </div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">MS Word Filipino</div>
+        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand English and technical terms when using Microsoft Word as a word processor.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Bootstrap 4" },
+            { "name": "PHP" },
+          ])
+        </div>
+  
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/MSWordFilipino" target="_blank">
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>

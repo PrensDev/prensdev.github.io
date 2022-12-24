@@ -2,34 +2,28 @@
 module.exports = {
   darkMode: 'class',
   content: [
-    "./pages/**/*.{html,js}",
+    "./pages/**/*.html",
     './index.html',
     './ui.html'
   ],
   theme: {
+    fontFamily: {
+      sans: ['Nunito', 'sans-serif'],
+      mono: ['Inconsolata', 'monospace'],
+    },
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#5A51B8',
-          // lighter: '#ADA9DB',
-          dark: '#918BD0'
+        brand: {
+          DEFAULT: '#0ea5e9',
+          darker: '#0284c7',
+          lighter: '#7dd3fc',
+          subtle: '#e0f2fe'
         },
-        secondary: {
-          DEFAULT: '#1e293b',
-          dark: '#7791BB'
+        typo: {
+          DEFAULT: '#171717',
         },
         muted: {
-          DEFAULT: '#6b7280',
-          dark: '#364245',
-        },
-        gray: {
-          1: '#f1f5f9',
-          2: '#e2e8f0',
-          3: '#cbd5e1',
-          
-          dark1: '#26262C',
-          dark2: '#1C1C21',
-          dark3: '#131316'
+          DEFAULT: '#64748b',
         }
       },
     },

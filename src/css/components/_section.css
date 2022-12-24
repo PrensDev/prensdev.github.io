@@ -1,0 +1,15 @@
+.section {
+  @apply py-4;
+}
+
+.section-container {
+  @apply container mx-auto px-4;
+}
+
+.section-header {
+  @apply text-center text-2xl md:text-4xl font-bold my-6;
+
+  i, .fas-solid {
+    @apply text-brand mr-2;
+  }
+}

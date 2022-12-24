@@ -1,0 +1,32 @@
+.hero {
+  @apply 
+    py-32 px-6 flex items-center justify-center bg-gradient-to-r from-white via-gray-100 to-white;
+  ;
+
+  .avatar-container {
+    @apply
+      flex justify-center items-center
+    ;
+  }
+
+  .avatar {
+    @apply
+      h-52 rounded-full ring-4 ring-muted ring-offset-8 mb-5
+      hover:ring-brand
+    ;
+  }
+
+  .heading {
+    @apply 
+      text-center font-mono text-brand font-bold text-5xl
+      md:text-7xl
+    ;
+  }
+
+  .role {
+    @apply
+      font-light text-center
+      md:text-2xl
+    ;
+  }
+}

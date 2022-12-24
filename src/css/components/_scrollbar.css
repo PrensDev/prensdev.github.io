@@ -1,0 +1,10 @@
+::-webkit-scrollbar {
+  @apply w-1.5;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply 
+    bg-muted rounded
+    hover:bg-brand
+  ;
+}

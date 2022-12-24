@@ -1,0 +1,14 @@
+* {
+  @apply text-typo select-none;
+}
+
+a {
+  @apply 
+    text-brand
+    hover:text-brand-darker
+  ;
+}
+
+body {
+  @apply bg-white;
+}

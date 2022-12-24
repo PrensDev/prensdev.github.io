@@ -1,0 +1,57 @@
+.project-item {
+  @apply 
+    grid grid-cols-1 gap-8 py-5
+    lg:grid-cols-2
+  ;
+
+  .project-details:nth-child(odd) {
+    @apply lg:text-right;
+  }
+
+  .featured {
+    @apply text-brand font-semibold;
+  
+    i, .fas-solid {
+      @apply text-brand mr-1;
+    }
+  }
+  
+  .project-title {
+    @apply font-extrabold text-2xl mb-3;
+  }
+  
+  .project-description {
+    @apply md:text-lg;
+  }
+  
+  .project-preview-container {
+    @apply 
+      flex justify-center order-first
+      lg:order-none
+    ;
+  }
+  
+  .project-preview {
+    @apply 
+      max-w-full rounded shadow-lg
+      lg:w-5/6
+    ;
+  }
+  
+  .badge {
+    @apply 
+      inline-block bg-brand-subtle px-3 py-1 rounded-full text-xs font-bold border border-brand
+      hover:bg-brand hover:cursor-pointer hover:text-white
+      active:translate-y-px
+    ;
+  }
+
+  .tech-stack {
+    @apply flex flex-wrap gap-1 mt-3 mb-5;
+  }
+
+  .project-details:nth-child(odd) .tech-stack {
+    @apply lg:justify-end;
+  }
+}
+

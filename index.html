@@ -1,299 +1,223 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#6691F5">
-  
-  <title>PrensDev - Jetsun Prince Torres | My Portfolio</title>
-  
+  <title>PrensDev (Jetsun Prince Torres) - My Portfolio</title>
+
   <link rel="icon" href="./public/img/avatar.gif">
   <link rel="stylesheet" href="./public/css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <script src="https://kit.fontawesome.com/9912ba67d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-  <!-- If no script -->
   <noscript>
-    <div class="noscript-container">
+  <div class="min-h-screen w-screen flex justify-center items-center fixed z-50 top-0 left-0 overflow-y-hidden overflow-x-hidden bg-white backdrop-blur-lg bg-opacity-25">
+    <div class="inline-block p-10 rounded">
+      <p class="text-center text-xl">My site requires some <b>JavaScript</b>.</p>
+      <p class="text-center text-xl">Please <b>enable</b> it for better experience.</p>
+    </div>
+  </div>
+</noscript>
+
+  <main>
+    <nav class="topbar">
+  <div class="topbar-container">
+    <div class="topbar-brand">
+      <span class="brand">PrensDev</span>
+    </div>
+    <div class="topbar-links">
+      <a class="topbar-link" draggable="false" href="#about">About</a>
+      <a class="topbar-link" draggable="false" href="#projects">Projects</a>
+      <a class="topbar-link" draggable="false" href="#contact">Contact</a>
+      <a class="btn" draggable="false" href="./resume.pdf" target="_blank">
+        Resume
+        <i class="fa-solid fa-file-lines ml-1"></i>
+      </a>
+      <button type="button" class="btn-darklight-toggler" data-toggle="displayMode">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+    <section class="hero">
+  <div>
+    <div class="avatar-container">
+      <img class="avatar" src="./public/img/avatar.jpg" alt="PrensDev" draggable="false"/>
+    </div>
+
+    <p class="heading">PrensDev</p>
+    <p class="role">Software Developer | Full-Stack Web Developer</p>
+  </div>
+</section>
+    <section class="section" id="about">
+  <div class="section-container">
+    <h2 class="section-header">
+  <i class="fa-solid fa-user-tie mr-1"></i>
+  Me, Myself, and I
+</h2>
+  
+    <div class="grid md:grid-cols-2 gap-4">
+      <div class="flex justify-center md:order-2">
+        <img class="w-4/6" src="./public/img/programming.svg" alt="" draggable="false">
+      </div>
       <div class="text-center">
-        <div class="text-4xl md:text-5xl mb-3 font-light">
-          Hi, This is 
-          <span class="consolas">
-            <span>Prens<span class="text-primary">Dev</span></span>
-          </span>
-        </div>
-        <div class="text-muted font-light">I'm sorry but my portfolio requires some JavaScript.</div>
-        <div class="text-muted font-light">Please enable it then reload.</div>
+        <p class="md:text-xl mb-4">Hello World! My name is <b>Jetsun Prince Torres</b>.</p>
+        <p class="md:text-xl mb-4">I am a <b>Filipino Software Developer</b>, <b>Full-Stack Web Developer</b>, <b>Computer Programmer</b>, and interested in <b>UI/UX designing</b>.</p>
+        <p class="md:text-xl mb-4">I built web applications and technologies that are innovative, modern, creative, and integrative which provide solutions for the real-world problem</p>
+        <p class="md:text-xl mb-4">I love to create websites that are user-friendly but professional looking.</p>
+        <p class="md:text-xl mb-4">I love to code in <b>JavaScript</b>!</p>
       </div>
     </div>
-  </noscript>
 
-  <!-- Body -->
-  <main class="hidden">
-
-    <!-- Hero -->
-    <section class="hero">
-
-      <!-- Image -->
-      <div class="hero-img">
-        <img 
-          class="rounded-full w-40 h-40 md:w-52 md:h-52" 
-          src="./public/img/avatar.jpg" 
-          alt="My Profile Picture" 
-          draggable="false"
-          title="Hi! I am Jetsun Prince Torres"
-        />
+    
+  </div>
+</section>
+    <section class="section bg-gray-100" id="projects">
+  <div class="section-container">
+    <h2 class="section-header">
+  <i class="fa-solid fa-diagram-project"></i>
+  Projects
+</h2>
+  
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true" alt="" draggable="false">
       </div>
-
-      <!-- Text -->
-      <div class="text-lg">Hello World! I am</div>
-      <div class="text-4xl md:text-7xl font-semibold consolas">
-        <span class="text-muted"><</span> 
-        <span id="heroUsername">Prens<span class="text-primary dark:text-primary">Dev</span></span>
-        <span class="text-muted">/></span> 
-      </div>
-      <p class="md:text-xl font-light text-muted">Software Developer / UI/UX Design Passionate / Computer Programmer</p>
-      <div class="mt-5"></div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">VaxxTrack & VaxxTrack API</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
       
-      <div class="text-xl consolas">Jetsun Prince Torres</div>
-
-      <button class="btn-primary" data-toggle="displayMode" type="button">Light/Dark Mode Toggler</button>
-
-    </section>
-
-    <!-- About -->
-    <section class="section-container about-section">
-      <h1 class="section-header" id="about">About Me</h1>
-      <p class="md:text-xl font-light mb-5">Hi everyone! My name is <span class="text-secondary dark:text-secondary-dark consolas">Jetsun Prince Torres</span>. I am a Filipino Software Developer, UI/UX Design Passionate, and Computer Programmer. I aspire to be a Full-Stack Developer. </p>
-      <p class="md:text-xl font-light">I build innovate, modern, and integrative technologies that provide solutions for the real-world problems.</p>
-      
-      <div class="grid grid-row-1 md:grid-cols-12 mt-10">
+        <div class="tech-stack">
+          <div class="badge">Bootstrap 4</div><div class="badge">CodeIgniter 3</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">Leaflet</div><div class="badge">Heatmap JS</div><div class="badge">PSGC API</div><div class="badge">HERE API</div><div class="badge">Node JS</div><div class="badge">Express</div><div class="badge">Sequelize ORM</div>
+        </div>
+  
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
+            <i class="devicon-github-original mr-1"></i>
+            Vaxxtrack
+          </a>
+          <a class="btn" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
+            <i class="devicon-github-original mr-1"></i>
+            Vaxxtrack API
+          </a>
+        </div>
         
-        <!-- Nav Tabs -->
-        <ul class="nav-tabs md:col-span-2" role="tablist">
-          <li class="nav-item" role="presentation">
-            <a class="nav-link active" role="button" data-toggle="tab" data-target="#careersPane">Career</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" role="button" data-toggle="tab" data-target="#skillsPane">Skills</a>
-          </li>
-          <li class="nav-item" role="presentation">
-            <a class="nav-link" role="button" data-toggle="tab" data-target="#educationPane">Education</a>
-          </li>
-        </ul>
-
-        <!-- Nav Panes -->
-        <div class="tab-content md:border-l border-dark md:ml-5 md:col-span-10 font-light">
-
-          <!-- Career -->
-          <div class="tab-pane careers show" id="careersPane">
-            <div class="pane-section">
-              <div class="careers-title">Software Developer, Manual Tester (Intern)</div>
-              <div class="careers-city">Sure AX, New South Wales, Australia</div>
-              <div class="careers-timeframe">April 2022 - Present</div>
+      </div>
+    </div>
   
-              <ul class="careers-list">
-                <li>Project: Extension Project Management System</li>
-                <li>Responsible for identifying and developing the user interface, structure, and design of web pages</li>
-                <li>Responsible for leading the team in terms of front-end development</li>
-              </ul>
-            </div>
-
-            <div class="pane-section">
-              <div class="careers-title">Lead Front-end Developer (Intern)</div>
-              <div class="careers-city">Polytechnic University of the Philippines, Quezon City</div>
-              <div class="careers-timeframe">March 2022 - July 2022</div>
-  
-              <ul class="careers-list">
-                <li>Project: Extension Project Management System</li>
-                <ul>
-                  <li>Responsible for identifying and developing the user interface, structure, and design of web pages</li>
-                  <li>Responsible for leading the team in terms of front-end development</li>
-                </ul>
-              </ul>
-            </div>
-
-          </div>
-
-          <!-- Skills -->
-          <div class="tab-pane skills" id="skillsPane">
-            <div class="pane-section">
-              <div class="skills-title">Technical Skills</div>
-              
-              <div class="skills-subtitle">Front-end Development</div>
-              <div class="skills-tech-stack">
-                <i class="devicon-html5-plain colored"></i>
-                <i class="devicon-css3-plain colored"></i>
-                <i class="devicon-sass-original colored"></i>
-                <i class="devicon-xd-plain colored"></i>
-              </div>
-              <p class="mb-5">I equipped myself with a thorough understanding of the structure, design, and use of markup languages and stylesheets, respectively, HTML and CSS, in the creation of modern web pages. This also includes having knowledge of building responsive web designs and an understanding of the concept of a mobile-first approach. I built web applications through the implementation of user-interface design concepts and principles that produce a user-centered product.</p>
-              <p class="mb-5">I am also knowledgable in making wireframes and prototypes for builing the initial sturture, design, and flow of processes.</p>
-
-              <div class="skills-subtitle">Back-end Development</div>
-              <div class="skills-tech-stack">
-                <i class="devicon-nodejs-plain colored"></i>
-                <i class="devicon-php-plain colored"></i>
-                <i class="devicon-mysql-plain-wordmark colored"></i>
-                <i class="devicon-microsoftsqlserver-plain"></i>
-              </div>
-              <p class="mb-5">I have experience of building the server-side of web applications, especially the handling of user data and requests, managing databases, constructing APIs, and business process and application logic. This also includes having knowledge of maintaining the security of web applications against cyberattacks and keeping the privacy and integrity of user data.</p>
-
-              <div class="skills-subtitle">Libraries and Frameworks</div>
-              <div class="skills skills-tech-stack">
-                <i class="devicon-bootstrap-plain colored"></i>
-                <i class="devicon-jquery-plain colored"></i>
-                <i class="devicon-tailwindcss-plain colored"></i>
-                <i class="devicon-express-original"></i>
-                <i class="devicon-sequelize-plain colored"></i>
-                <i class="devicon-codeigniter-plain colored"></i>
-                <i class="devicon-fastapi-plain colored"></i>
-              </div>
-              <p class="mb-5">I extend my knowledge by learning about different common libraries and frameworks to speed up my development, use already available technologies for specific problems, and lessen the effort of reproducing source codes, which effectively reduces time and cost in developing web applications.</p>
-              
-              <div class="skills-subtitle">Computer Programming</div>
-              <div class="skills-tech-stack">
-                <i class="devicon-javascript-plain colored"></i>
-                <i class="devicon-typescript-plain colored"></i>
-                <i class="devicon-python-plain colored"></i>
-                <i class="devicon-c-plain colored"></i>
-                <i class="devicon-java-plain colored"></i>
-              </div>
-              <p class="mb-5">I made myself familiar with the fundamentals of computer programming, especially with the concept of data structures, algorithms, debugging, and object-oriented programming with different computer languages.</p>
-              
-              <div class="skills-subtitle">Source Code Management and Version Control</div>
-              <div class="skills-tech-stack">
-                <i class="devicon-vscode-plain colored"></i>
-                <i class="devicon-git-plain colored"></i>
-                <i class="devicon-github-original"></i>
-                <i class="devicon-bitbucket-original colored"></i>
-              </div>
-              <p class="mb-5">I also include having a knowledge in managing source codes and version control using Git.</p>
-            </div>
-
-            <div class="pane-section">
-              <div class="skills-title">Professional and Soft Skills</div>
-              
-              <div class="skills-subtitle">Project Management and Agile Methodology</div>
-              <div class="skills-tech-stack">
-                <i class="devicon-trello-plain colored" title="Trello"></i>
-                <i class="devicon-jira-plain colored" title="Jira"></i>
-                <i class="devicon-confluence-original colored" title="Confluence"></i>
-              </div>
-
-              <div class="skills-subtitle">Analytical and Critical Thinking</div>
-              <div class="skills-subtitle">Team Player</div>
-              <div class="skills-subtitle">Responsible and Productive</div>
-              <div class="skills-subtitle">Eagerness to Learn New Things</div>
-            </div>
-          </div>
-
-          <!-- Education -->
-          <div class="tab-pane education careers" id="educationPane">
-            <div class="pane-section">
-              <div class="education-title">Polytechnic University of the Philippines - College</div>
-              <div class="education-city">Quezon City, Metro Manila</div>
-              <div class="education-timeframe">June 2018 - September 2022</div>
-
-              <ul class="careers-list">
-                <li>Graduated with a degree of Bachelor of Science in Information Technology</li>
-                <li>Magna Cum Laude</li>
-                <li>Consistent President Lister</li>
-              </ul>
-            </div>
-
-            <div class="pane-section">
-              <div class="education-title">Our Lady of Fatima University - Senior High School</div>
-              <div class="education-city">Quezon City, Metro Manila</div>
-              <div class="education-timeframe">June 2016 - March 2018</div>
-
-              <ul class="careers-list">
-                <li>Strand Taken: Science, Technology, Engineering, and Mathematics (STEM)</li>
-                <li>Academic Excellence Achiever</li>
-              </ul>
-            </div>
-
-            <div class="pane-section">
-              <div class="education-title">Bignay National High School - Junior High School</div>
-              <div class="education-city">Valenzuela City, Metro Manila</div>
-              <div class="education-timeframe">June 2012 - March 2016</div>
-
-              <ul class="careers-list">
-                <li>Third Place in Web Designing - Division Technolympics, Valenzuela City</li>
-                <li>Started my passion as a web developer</li>
-              </ul>
-            </div>
-          </div>
-          
+    <div class="project-item">
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">ABN Job Portal</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">Bootstrap 4</div><div class="badge">CodeIgniter 3</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">MS SQL</div>
+        </div>
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank">
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
         </div>
       </div>
-    
-    </section>
-
-    <!-- Projects -->
-    <section class="section-container recent-projects-section">
-      <h1 class="section-header" id="recent-projects">Recent Projects</h1>
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
+      </div>
       
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-y-4 gap-x-6 mt-8" id="projectList">
-        <a href="https://github.com/PrensDev/vaxxtrack" target="_blank" class="card">
-          <div class="card-image" style="background: url('https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true')"></div>
-          <div class="card-body">
-            <div class="card-title">VaxxTrack</div>
-            <div class="card-description">A COVID-19 Contact Tracing App and Vaccine Monitoring System</div>
-            <div class="card-badges">
-              <div class="card-badge">CodeIgniter 3</div><div class="card-badge">Bootstrap 4</div><div class="card-badge">Sequelize ORM</div><div class="card-badge">Leaflet</div><div class="card-badge">PSGC API</div><div class="card-badge">HERE API</div>
-            </div>
-          </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true" alt="" draggable="false">
+      </div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">MS Word Filipino</div>
+        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand English and technical terms when using Microsoft Word as a word processor.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">Bootstrap 4</div><div class="badge">PHP</div>
+        </div>
+  
+        <div>
+          <a class="btn" href="https://github.com/PrensDev/MSWordFilipino" target="_blank">
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="section my-32" id="contact">
+  <div class="flex justify-center">
+    <div class="flex flex-col align-center w-3/4 md:w-2/4">
+      <h2 class="section-header">
+  <i class="fa-solid fa-phone-volume"></i>
+  Want to reach me?
+</h2>
+    
+      <div class="text-center text-4xl md:text-5xl font-extrabold mb-2">Get in touch!</div>
+      
+      <p class="text-center md:text-xl text-muted">Wanna say hi? Or do you have any concerns? Send me an email by clicking the link below. I will try my best to make respond!</p>
+    
+      <div class="text-center my-10">
+        <a class="btn" href="mailto:jetsunprincetorres+portfolio@gmail.com" draggable="false">
+          Say hi! 
+          <i class="fa-solid fa-hand ml-1"></i>
         </a>
       </div>
-    </section>
 
-    <!-- Contact -->
-    <section class="section-container py-40 contact-section">
-      <h1 class="section-header" id="about">Get in touch</h1>
-      <div class="text-center mt-14">
-        <a 
-          class="btn-primary"
-          href="mailto:jetsunprincetorres@gmail.com" 
-          title="Email me!" 
-          rel="me" 
-          target="_blank"
-        >Say hello 👋 !</a>
-      </div>
-
-      <!-- Contact Links -->
-      <div class="mt-5 text-center contact-links">
-
-        <!-- Github -->
-        <a href="https://github.com/PrensDev" target="_blank" title="My Github Profile">
+      <div class="text-center">
+        <a class="btn-icon" href="https://github.com/PrensDev" target="_blank" draggable="false">
           <i class="devicon-github-original"></i>
         </a>
 
-        <!-- Linked In -->
-        <a href="https://www.linkedin.com/in/jetsunprince/" target="_blank" title="My LinkedIn Profile">
+        <a class="btn-icon" href="https://www.linkedin.com/in/jetsunprince/" target="_blank" draggable="false">
           <i class="devicon-linkedin-plain"></i>
         </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="hidden">
-    <div class="footer-content">
-      <div class="consolas text-center md:text-left" id="credits"></div>
-      <div class="text-sm text-center" title="Very lightweight!">Built and designed by Myself</div>
-      <div class="text-sm text-center md:text-right">
-        with 
-        <a href="https://tailwindcss.com/" target="_blank">
-          <i class="devicon-tailwindcss-plain colored"></i>
-          tailwindcss
-        </a>
+          
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+  </main>
+  
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <p>PrensDev &copy; 2022</p>
+    </div>
+    <div class="footer-center">
+      <p>Designed and build by myself</p>
+    </div>
+    <div class="footer-right">
+      <p>with <a href="https://tailwindcss.com/">TailwindCSS</a>, <a href="https://undraw.co/">unDraw</a> and <a href="https://devicon.dev/" target="_blank">Devicon</a>.</p>
+    </div>
+  </div>
+</footer>
+  <script src="./public/js/portfolio.js"></script>
 
-  <script src="./src/js/index.js"></script>
 </body>
 </html>

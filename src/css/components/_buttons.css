@@ -1,0 +1,45 @@
+.btn {
+  @apply 
+    inline-block bg-brand text-white px-4 py-2 font-semibold rounded
+    hover:bg-brand-darker hover:text-white
+    active:translate-y-px
+  ;
+
+  i, .fa-solid {
+    @apply text-white
+  }
+}
+
+.btn-darklight-toggler {
+  height: 39px;
+  width: 39px;
+  @apply
+    inline-flex justify-center items-center border border-brand rounded-full ml-5
+    hover:bg-brand hover:text-white
+    active:translate-y-px
+  ;
+
+  &:hover {
+    i, .fas-solid {
+      @apply
+        text-white
+      ;
+    }
+  }
+}
+
+.btn-icon {
+  height: 40px;
+  width: 40px;
+  @apply 
+    inline-flex justify-center items-center
+    active:translate-y-px
+  ;
+
+  > i {
+    @apply 
+      text-3xl text-typo
+      hover:text-brand
+    ;
+  }
+}
