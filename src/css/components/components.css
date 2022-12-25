@@ -1,5 +1,7 @@
 @import "./_scrollbar.css";
+@import "./_badges.css";
 @import "./_buttons.css";
+@import "./_tabs.css";
 @import "./_topbar.css";
 @import "./_hero.css";
 @import "./_section.css";

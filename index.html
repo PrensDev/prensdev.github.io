@@ -32,7 +32,12 @@
     <nav class="topbar">
   <div class="topbar-container">
     <div class="topbar-brand">
-      <span class="brand">PrensDev</span>
+      <a href="#home" class="brand" data-trigger="scrollToTop">PrensDev</a>
+    </div>
+    <div class="topbar-toggler">
+      <button class="btn" data-navbar="toggler">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
     <div class="topbar-links">
       <a class="topbar-link" draggable="false" href="#about">About</a>
@@ -65,7 +70,7 @@
   Me, Myself, and I
 </h2>
   
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 gap-4 mb-5">
       <div class="flex justify-center md:order-2">
         <img class="w-4/6" src="./public/img/programming.svg" alt="" draggable="false">
       </div>
@@ -75,6 +80,102 @@
         <p class="md:text-xl mb-4">I built web applications and technologies that are innovative, modern, creative, and integrative which provide solutions for the real-world problem</p>
         <p class="md:text-xl mb-4">I love to create websites that are user-friendly but professional looking.</p>
         <p class="md:text-xl mb-4">I love to code in <b>JavaScript</b>!</p>
+      </div>
+    </div>
+
+    <div class="text-3xl font-bold text-center mt-5">More details about Me</div>
+
+    <div class="my-5 flex justify-center">
+      <div class="tab-container w-full md:w-5/6">
+        <div class="tab-links">
+          <div class="tab-item" role="presentation">
+            <div 
+              class="tab-link active" 
+              data-toggle="tab"
+              data-target="#career-pane"
+            >Career</div>
+          </div>
+          <div class="tab-item" role="presentation">
+            <div 
+              class="tab-link"
+              data-toggle="tab"
+              data-target="#skills-pane"
+            >Skills</div>
+          </div>
+          <div class="tab-item" role="presentation">
+            <div 
+              class="tab-link"
+              data-toggle="tab"
+              data-target="#education-pane"
+            >Education</div>
+          </div>
+        </div>
+  
+        <div class="tab-panes">
+          
+          <div class="tab-pane show" id="career-pane">
+            <div class="pane-section">
+              <div class="pane-section-title">Software Developer, Quality Assurance Tester (Intern)</div>
+              <div class="pane-section-subtitle">SureAX @ New South Wales, Australia</div>
+              <div class="pane-section-subtitle">April 2022 - Present</div>
+
+              <ul>
+                <li>Write test cases, perform manual testing and documentation, and submit bug tickets for developers.</li>
+                <li>Fix minor to show-stopping bugs and errors, and develop new features.</li>
+                <li>Worked with a team to develop mobile application version of web application.</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="pane-section-title">Lead Front-End Developer (Intern)</div>
+              <div class="pane-section-subtitle">Polytechnic University of the Philippines @ Quezon City, Metro Manila, Philippines</div>
+              <div class="pane-section-subtitle">March - July 2022</div>
+
+              <ul>
+                <li>Lead the team developers in terms of implementing user-centered front-end features.</li>
+                <li>Write and document standards for user-interface design.</li>
+                <li>Implement major front-end features aligned with design principles.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="tab-pane" id="skills-pane">
+            Soon...
+          </div>
+          
+          <div class="tab-pane" id="education-pane">
+            <div class="pane-section">
+              <div class="pane-section-title">Polytechnic University of the Philippines</div>
+              <div class="pane-section-subtitle">Bachelor of Science in Information Technology @ Quezon City, Metro Manila</div>
+              <div class="pane-section-subtitle">2018 - 2022</div>
+              
+              <ul>
+                <li>Magna Cum Laude</li>
+                <li>Consistent President's Lister</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="pane-section-title">Our Lady of Fatima University</div>
+              <div class="pane-section-subtitle">Senior High School @ Quezon City, Metro Manila</div>
+              <div class="pane-section-subtitle">2016 - 2018</div>
+
+              <ul>
+                <li>Academic Excellency Awardee</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="pane-section-title">Bignay National High School</div>
+              <div class="pane-section-subtitle">Junior High School @ Valenzuela City, Metro Manila</div>
+              <div class="pane-section-subtitle">2012 - 2016</div>
+
+              <ul>
+                <li>My first interest in Web Development</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -105,11 +206,21 @@
         </div>
   
         <div>
-          <a class="btn" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/vaxxtrack" 
+            target="_blank" 
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack
           </a>
-          <a class="btn" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/vaxxtrack-api" 
+            target="_blank" 
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack API
           </a>
@@ -117,8 +228,30 @@
         
       </div>
     </div>
+
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="public\img\pupqc-epms\proposal.png" alt="" draggable="false">
+      </div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">PUPQC Extension Project Management System</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">EJS</div><div class="badge">Bootstrap 4</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">Node JS</div><div class="badge">Express</div><div class="badge">Sequelize ORM</div>
+        </div>
+        
+      </div>
+    </div>
   
     <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
+      </div>
       <div class="project-details">
         <div class="featured">
           <i class="fa-solid fa-thumbtack"></i>
@@ -131,16 +264,17 @@
           <div class="badge">Bootstrap 4</div><div class="badge">CodeIgniter 3</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">MS SQL</div>
         </div>
         <div>
-          <a class="btn" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/ABN-Job-Portal" 
+            target="_blank"
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
         </div>
       </div>
-      <div class="project-preview-container">
-        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
-      </div>
-      
     </div>
 
     <div class="project-item">
@@ -160,7 +294,12 @@
         </div>
   
         <div>
-          <a class="btn" href="https://github.com/PrensDev/MSWordFilipino" target="_blank">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/MSWordFilipino" 
+            target="_blank"
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -168,6 +307,78 @@
         
       </div>
     </div>
+
+    <div class="my-5 text-center font-bold text-4xl">Other Projects</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">Hospital Recruitment Management System</div>
+        <p>An integrative Recruitment Management System Submodule under Human Resource Module for a Hospital Management System.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">Bootstrap 4</div><div class="badge">Fast API</div><div class="badge">jQuery</div><div class="badge">SQL Alchemy</div>
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/homies-recruitment" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">PUP-SIS App</div>
+        <p>A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">Flutter</div><div class="badge">Dart</div>
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/pupsis_app" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">Paylight UI</div>
+        <p>A simple mobile banking wallet user-interface/prototype design.</p>
+      
+        <div class="tech-stack">
+          <div class="badge">Adobe XD</div>
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/PayLight-UI" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-5">
+      <a href="https://github.com/PrensDev?tab=repositories" class="btn" target="_blank">Check other repositories</a>
+    </div>
+
   </div>
 </section>
     <section class="section my-32" id="contact">
@@ -180,7 +391,7 @@
     
       <div class="text-center text-4xl md:text-5xl font-extrabold mb-2">Get in touch!</div>
       
-      <p class="text-center md:text-xl text-muted">Wanna say hi? Or do you have any concerns? Send me an email by clicking the link below. I will try my best to make respond!</p>
+      <p class="text-center md:text-xl text-muted">Do you have any concerns? Send me an email by clicking the link below. I will try my best to make respond!</p>
     
       <div class="text-center my-10">
         <a class="btn" href="mailto:jetsunprincetorres+portfolio@gmail.com" draggable="false">
@@ -207,13 +418,18 @@
   <footer class="footer">
   <div class="footer-container">
     <div class="footer-left">
-      <p>PrensDev &copy; 2022</p>
-    </div>
-    <div class="footer-center">
-      <p>Designed and build by myself</p>
+      <p>PrensDev &bull; <span data-content="creditYear"></span></p>
     </div>
     <div class="footer-right">
-      <p>with <a href="https://tailwindcss.com/">TailwindCSS</a>, <a href="https://undraw.co/">unDraw</a> and <a href="https://devicon.dev/" target="_blank">Devicon</a>.</p>
+      <p class="text-sm">
+        Designed and build by myself with 
+        <a href="https://tailwindcss.com/" target="_blank" draggable="false">TailwindCSS</a>, 
+        <a href="https://fontawesome.com/" target="_blank" draggable="false">FontAwesome</a>, 
+        <a href="https://undraw.co/" target="_blank" draggable="false">unDraw</a> 
+        and <a href="https://devicon.dev/" target="_blank" draggable="false">Devicon</a>.</p>
+    </div>
+    <div class="footer-right">
+      <p class="text-sm">Happy Coding Everyone!</p>
     </div>
   </div>
 </footer>

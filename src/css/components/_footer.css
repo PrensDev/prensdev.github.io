@@ -4,15 +4,14 @@
 
 .footer-container {
   @apply 
-    container mx-auto px-4 grid grid-cols-1 
-    lg:grid-cols-3  lg:gap-2
+    container mx-auto px-4 grid grid-cols-1 gap-1
   ;
 }
 
 .footer-left {
   @apply 
     text-center font-extrabold
-    lg:text-left
+    /* lg:text-left */
   ;
 }
 
@@ -23,6 +22,6 @@
 .footer-right {
   @apply
     text-center 
-    lg:text-right
+    /* lg:text-right */
   ;
 }

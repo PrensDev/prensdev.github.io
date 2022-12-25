@@ -34,11 +34,21 @@
         </div>
   
         <div>
-          <a class="btn" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/vaxxtrack" 
+            target="_blank" 
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack
           </a>
-          <a class="btn" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/vaxxtrack-api" 
+            target="_blank" 
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack API
           </a>
@@ -46,8 +56,38 @@
         
       </div>
     </div>
+
+    <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="public\img\pupqc-epms\proposal.png" alt="" draggable="false">
+      </div>
+      <div class="project-details">
+        <div class="featured">
+          <i class="fa-solid fa-thumbtack"></i>
+          Featured Project
+        </div>
+        <div class="project-title">PUPQC Extension Project Management System</div>
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, citizen's health and vaccination status, available vaccines, and many more features.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "EJS" },
+            { "name": "Bootstrap 4" },
+            { "name": "jQuery" },
+            { "name": "Moment JS" },
+            { "name": "Node JS" },
+            { "name": "Express" },
+            { "name": "Sequelize ORM" },
+          ])
+        </div>
+        
+      </div>
+    </div>
   
     <div class="project-item">
+      <div class="project-preview-container">
+        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
+      </div>
       <div class="project-details">
         <div class="featured">
           <i class="fa-solid fa-thumbtack"></i>
@@ -66,16 +106,17 @@
           ])
         </div>
         <div>
-          <a class="btn" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/ABN-Job-Portal" 
+            target="_blank"
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
         </div>
       </div>
-      <div class="project-preview-container">
-        <img class="project-preview" src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" alt="" draggable="false">
-      </div>
-      
     </div>
 
     <div class="project-item">
@@ -98,7 +139,12 @@
         </div>
   
         <div>
-          <a class="btn" href="https://github.com/PrensDev/MSWordFilipino" target="_blank">
+          <a 
+            class="btn btn-github" 
+            href="https://github.com/PrensDev/MSWordFilipino" 
+            target="_blank"
+            draggable="false"
+          >
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -106,5 +152,87 @@
         
       </div>
     </div>
+
+    <div class="my-5 text-center font-bold text-4xl">Other Projects</div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">Hospital Recruitment Management System</div>
+        <p>An integrative Recruitment Management System Submodule under Human Resource Module for a Hospital Management System.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Bootstrap 4" },
+            { "name": "Fast API" },
+            { "name": "jQuery" },
+            { "name": "SQL Alchemy" },
+          ])
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/homies-recruitment" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">PUP-SIS App</div>
+        <p>A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Flutter" },
+            { "name": "Dart" },
+          ])
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/pupsis_app" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white p-5 rounded shadow">
+        <div class="font-extrabold text-2xl mb-3">Paylight UI</div>
+        <p>A simple mobile banking wallet user-interface/prototype design.</p>
+      
+        <div class="tech-stack">
+          @@loop('../components/badge.html', [
+            { "name": "Adobe XD" },
+          ])
+        </div>
+
+        <div>
+          <a 
+            href="https://github.com/PrensDev/PayLight-UI" 
+            class="btn btn-github"
+            draggable="false"
+            target="_blank"
+          >
+            <i class="devicon-github-original mr-1"></i>
+            Check this repo
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-5">
+      <a href="https://github.com/PrensDev?tab=repositories" class="btn" target="_blank">Check other repositories</a>
+    </div>
+
   </div>
 </section>

@@ -11,7 +11,8 @@
 
   .avatar {
     @apply
-      h-52 rounded-full ring-4 ring-muted ring-offset-8 mb-5
+      w-40 h-40 rounded-full ring-4 ring-muted ring-offset-8 mb-5
+      sm:w-52 sm:h-52
       hover:ring-brand
     ;
   }

@@ -1,0 +1,41 @@
+.tab-links {
+  @apply gap-2;
+
+  .tab-item {
+    @apply inline-block;
+  }
+
+  .tab-link {
+    @apply 
+      inline-block px-4 py-2 font-bold rounded text-muted
+      hover:cursor-pointer hover:text-typo
+      active:translate-y-px
+    ; 
+
+    &.active {
+      @apply bg-brand text-white;
+    }
+  }
+}
+
+.tab-panes {
+  .tab-pane {
+    @apply hidden py-3;
+  
+    &.show {
+      @apply block;
+    }
+  }
+}
+
+.pane-section {
+  @apply mb-3;
+
+  .pane-section-title {
+    @apply font-bold text-xl;
+  }
+
+  .pane-section-subtitle {
+    @apply font-bold text-muted;
+  }
+}

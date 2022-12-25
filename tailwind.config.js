@@ -24,6 +24,10 @@ module.exports = {
         },
         muted: {
           DEFAULT: '#64748b',
+        },
+        github: {
+          DEFAULT: '#161b22',
+          darker: '#0d1117'
         }
       },
     },

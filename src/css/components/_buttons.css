@@ -8,6 +8,13 @@
   i, .fa-solid {
     @apply text-white
   }
+
+  &.btn-github {
+    @apply
+      bg-github
+      hover:bg-github-darker
+    ;
+  }
 }
 
 .btn-darklight-toggler {

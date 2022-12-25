@@ -57,34 +57,49 @@
     displayModeToggler_btn.innerHTML = newDisplayMode;
   })
 
-  // * For Topbar
+  // * For Topbar Links
 
   document.querySelectorAll('.topbar-link').forEach(item => {
     item.addEventListener('click', e => {
       e.preventDefault();
+      togglerNavbar(true);
       const link = item.getAttribute('href');
       const sectionY = document.querySelector(link).offsetTop;
       const topbarHeight = document.querySelector('.topbar').offsetHeight;
       window.scrollTo({
-          top: sectionY - topbarHeight,
-          behavior: "smooth"
+        top: sectionY - topbarHeight,
+        behavior: "smooth"
       })
     })
   })
 
+  // * For Navbar Toggler
+
+  const togglerNavbar = (hide = false) => {
+    const topbarLinksClassList = document.getElementsByClassName('topbar-links')[0].classList;
+    topbarLinksClassList.contains('show') || hide
+      ? topbarLinksClassList.remove('show') 
+      : topbarLinksClassList.add('show') 
+  }
+
+  document.querySelector(`[data-navbar="toggler"]`).addEventListener('click', e => {
+    e.preventDefault();
+    togglerNavbar();
+  })
+
   // * For Hero Username
 
-  const USERNAME = 'PrensDev';
-  const heroUsername = document.getElementById('heroUsername');
+  // const USERNAME = 'PrensDev';
+  // const heroUsername = document.getElementById('heroUsername');
   
-  heroUsername.innerHTML = '';
-  setTimeout(() => {
-    USERNAME.split('').forEach((char, i) => {
-      setTimeout(() => {
-        heroUsername.innerHTML += `<span${ i >= 5 ? ` class="text-primary dark:text-primary-dark"` : ` class="text-secondary dark:text-secondary-dark"` }>${char}</span>`;
-      }, 0+(i*200));
-    });
-  }, 500);
+  // heroUsername.innerHTML = '';
+  // setTimeout(() => {
+  //   USERNAME.split('').forEach((char, i) => {
+  //     setTimeout(() => {
+  //       heroUsername.innerHTML += `<span${ i >= 5 ? ` class="text-primary dark:text-primary-dark"` : ` class="text-secondary dark:text-secondary-dark"` }>${char}</span>`;
+  //     }, 0+(i*200));
+  //   });
+  // }, 500);
 
   // * For Tab Panes
 
@@ -95,7 +110,7 @@
     elem.addEventListener('click', e => {
       e.preventDefault();
       if(elem.classList.contains('active')) return;
-      navTabs.querySelectorAll('.nav-link').forEach(link => link.classList.contains('active') && link.classList.remove('active'));
+      navTabs.querySelectorAll('.tab-link').forEach(link => link.classList.contains('active') && link.classList.remove('active'));
       elem.classList.add('active');
       tabContent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.contains('show') && pane.classList.remove('show'));
       dataTarget.classList.add('show');
@@ -104,22 +119,17 @@
 
   // * Scroll to top
 
-  // document.getElementById('scrollToTop').addEventListener('click', () => {
-  //   window.scrollTo(0, 0);
-  // });
+  document.querySelector(`[data-trigger="scrollToTop"]`).addEventListener('click', e => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 
   // * For footer
 
-  document.getElementById('credits').innerHTML = `Prens<span class="text-primary">Dev</span> © ${ (new Date()).getFullYear() }`;
-
-  // * As the page fully loaded
-
-  // Remove the hidden class
-  document.getElementsByTagName('main')[0].classList.remove('hidden');
-  document.getElementsByTagName('footer')[0].classList.remove('hidden');
-
-  // Remove the noscript
-  document.getElementsByTagName('noscript')[0].parentNode.removeChild(document.getElementsByTagName('noscript')[0]);
+  document.querySelector(`[data-content="creditYear"]`).innerHTML = (new Date()).getFullYear();
 })();
 
 
