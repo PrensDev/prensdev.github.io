@@ -41,7 +41,8 @@ module.exports = {
           darker: '#161b22',
           darkmode: {
             DEFAULT: '#21262d',
-            darker: '#161b22'
+            darker: '#161b22',
+            lighter: '#31353d'
           }
         }
       },

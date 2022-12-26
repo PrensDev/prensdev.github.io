@@ -30,10 +30,14 @@
   .featured {
     @apply 
       text-brand font-extrabold text-sm
+      dark:text-brand-darker
     ;
   
     i, .fas-solid {
-      @apply text-brand mr-1;
+      @apply 
+        text-brand mr-1
+        dark:text-brand-darker
+      ;
     }
   }
   

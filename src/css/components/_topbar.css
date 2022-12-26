@@ -14,6 +14,7 @@
     .brand {
       @apply 
         font-mono text-brand font-black text-xl flex justify-between items-center h-full
+        dark:text-brand-darker
       ;
     }
   }

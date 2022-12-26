@@ -9,14 +9,14 @@ a {
   @apply 
     text-brand
     hover:text-brand-darker
-    dark:text-brand
-    dark:hover:text-brand-darker
+    dark:text-brand-darker
+    dark:hover:text-brand
   ;
 }
 
 body {
   @apply 
-    bg-white duration-150
+    bg-white
     dark:bg-body-darkmode
   ;
 }

@@ -3,8 +3,8 @@
     inline-block bg-brand text-white px-4 py-2 font-semibold rounded
     hover:bg-brand-darker hover:text-white
     active:translate-y-px
-    dark:text-white
-    dark:hover:text-white
+    dark:text-white dark:bg-brand-darker
+    dark:hover:text-white dark:hover:bg-brand
   ;
 
   i, .fa-solid {
@@ -16,7 +16,7 @@
       bg-github
       hover:bg-github-darker
       dark:bg-github-darkmode dark:text-white
-      dark:hover:bg-github-darkmode-darker
+      dark:hover:bg-github-darkmode-lighter
     ;
   }
 }
@@ -28,7 +28,16 @@
     inline-flex justify-center items-center border border-brand rounded-full ml-5
     hover:bg-brand hover:text-white
     active:translate-y-px
+    dark:border-brand-darker
+    dark:hover:bg-brand-darker
   ;
+
+  i, .fas-solid {
+    @apply 
+      text-muted
+      dark:text-muted-darkmode
+    ;
+  }
 
   &:hover {
     i, .fas-solid {

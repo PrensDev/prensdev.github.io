@@ -14,6 +14,16 @@
   ;
 
   i, .fas-solid {
-    @apply text-brand mr-2;
+    @apply 
+      text-brand mr-2
+      dark:text-brand-darker
+    ;
   }
+}
+
+.section-subheader {
+  @apply 
+    text-xl font-bold text-center my-5
+    md:text-3xl
+    dark:text-white
 }
