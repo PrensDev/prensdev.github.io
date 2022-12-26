@@ -3,6 +3,8 @@
     inline-block bg-brand text-white px-4 py-2 font-semibold rounded
     hover:bg-brand-darker hover:text-white
     active:translate-y-px
+    dark:text-white
+    dark:hover:text-white
   ;
 
   i, .fa-solid {
@@ -13,6 +15,8 @@
     @apply
       bg-github
       hover:bg-github-darker
+      dark:bg-github-darkmode dark:text-white
+      dark:hover:bg-github-darkmode-darker
     ;
   }
 }
@@ -47,6 +51,8 @@
     @apply 
       text-3xl text-typo
       hover:text-brand
+      dark:text-typo-darkmode
+      dark:hover:text-white
     ;
   }
 }

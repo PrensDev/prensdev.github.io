@@ -1,7 +1,14 @@
+.projects {
+  @apply 
+    bg-gray-100 
+    dark:bg-body-darkmode-darker
+  ;
+}
+
 .project-item {
   @apply 
-    grid grid-cols-1 gap-8 py-5
-    lg:grid-cols-2
+    grid grid-cols-1 gap-4 py-5
+    lg:gap-8 lg:grid-cols-2
   ;
 
   &:nth-child(odd) {
@@ -21,7 +28,9 @@
   }
 
   .featured {
-    @apply text-brand font-semibold;
+    @apply 
+      text-brand font-extrabold text-sm
+    ;
   
     i, .fas-solid {
       @apply text-brand mr-1;
@@ -29,7 +38,11 @@
   }
   
   .project-title {
-    @apply font-extrabold text-2xl mb-3;
+    @apply 
+      font-extrabold text-xl mb-3
+      md:text-2xl
+      dark:text-white
+    ;
   }
   
   .project-description {
@@ -45,7 +58,7 @@
   
   .project-preview {
     @apply 
-      w-full rounded shadow-lg
+      w-full h-full rounded-lg shadow-lg
       lg:w-5/6
     ;
   }
@@ -53,4 +66,23 @@
 
 .tech-stack {
   @apply flex flex-wrap gap-1 mt-3 mb-5;
+}
+
+.other-project-item {
+  @apply 
+    bg-white p-5 rounded-lg shadow
+    dark:bg-body-darkmode
+  ;
+}
+
+.other-project-item-title {
+  @apply 
+    font-extrabold text-xl mb-3
+    md:text-2xl
+    dark:text-white
+  ;
+}
+
+.other-project-item-description {
+  @apply md:text-lg;
 }

@@ -10,6 +10,8 @@
       inline-block px-4 py-2 font-bold rounded text-muted
       hover:cursor-pointer hover:text-typo
       active:translate-y-px
+      dark:text-muted-darkmode
+      dark:hover:text-white
     ; 
 
     &.active {
@@ -32,10 +34,16 @@
   @apply mb-3;
 
   .pane-section-title {
-    @apply font-bold text-xl;
+    @apply 
+      font-bold text-xl
+      dark:text-white
+    ;
   }
 
   .pane-section-subtitle {
-    @apply font-bold text-muted;
+    @apply 
+      font-bold text-muted
+      dark:text-muted-darkmode
+    ;
   }
 }

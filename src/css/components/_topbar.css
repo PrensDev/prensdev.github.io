@@ -1,6 +1,7 @@
 .topbar {
   @apply
     sticky top-0 shadow bg-white backdrop-blur bg-opacity-75
+    dark:bg-body-darkmode dark:backdrop-blur dark:bg-opacity-75
   ;
 
   .topbar-container {
@@ -41,6 +42,8 @@
       md:inline-block
       hover:text-typo
       active:translate-y-px
+      dark:text-muted-darkmode
+      dark:hover:text-white
     ;
 
     &.active {

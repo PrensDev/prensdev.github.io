@@ -3,5 +3,7 @@
     inline-block bg-brand-subtle px-3 py-1 rounded-full text-xs font-bold border border-brand
     hover:bg-brand hover:cursor-pointer hover:text-white
     active:translate-y-px
+    dark:bg-brand-darkmode-subtle dark:text-white
+    dark:hover:bg-brand
   ;
 }

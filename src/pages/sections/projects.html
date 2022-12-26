@@ -1,4 +1,4 @@
-<section class="section bg-gray-100" id="projects">
+<section class="section projects" id="projects">
   <div class="section-container">
     @@include('../components/section_header.html', {
       "section_name": "Projects",
@@ -153,12 +153,12 @@
       </div>
     </div>
 
-    <div class="my-5 text-center font-bold text-4xl">Other Projects</div>
+    <div class="my-5 text-center font-bold text-3xl dark:text-white">Other Projects</div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <div class="bg-white p-5 rounded shadow">
-        <div class="font-extrabold text-2xl mb-3">Hospital Recruitment Management System</div>
-        <p>An integrative Recruitment Management System Submodule under Human Resource Module for a Hospital Management System.</p>
+    <div class="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4">
+      <div class="other-project-item">
+        <div class="other-project-item-title">Hospital Recruitment Management System</div>
+        <p class="other-project-item-description">An integrative Recruitment Management System Submodule under Human Resource Module for a Hospital Management System.</p>
       
         <div class="tech-stack">
           @@loop('../components/badge.html', [
@@ -182,9 +182,9 @@
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded shadow">
-        <div class="font-extrabold text-2xl mb-3">PUP-SIS App</div>
-        <p>A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
+      <div class="other-project-item">
+        <div class="other-project-item-title">PUP-SIS App</div>
+        <p class="other-project-item-description">A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
       
         <div class="tech-stack">
           @@loop('../components/badge.html', [
@@ -206,9 +206,9 @@
         </div>
       </div>
 
-      <div class="bg-white p-5 rounded shadow">
-        <div class="font-extrabold text-2xl mb-3">Paylight UI</div>
-        <p>A simple mobile banking wallet user-interface/prototype design.</p>
+      <div class="other-project-item">
+        <div class="other-project-item-title">Paylight UI</div>
+        <p class="other-project-item-description">A simple mobile banking wallet user-interface/prototype design.</p>
       
         <div class="tech-stack">
           @@loop('../components/badge.html', [

@@ -1,14 +1,28 @@
 * {
-  @apply text-typo select-none;
+  @apply 
+    text-typo select-none
+    dark:text-typo-darkmode
+  ;
 }
 
 a {
   @apply 
     text-brand
     hover:text-brand-darker
+    dark:text-brand
+    dark:hover:text-brand-darker
   ;
 }
 
 body {
-  @apply bg-white;
+  @apply 
+    bg-white duration-150
+    dark:bg-body-darkmode
+  ;
+}
+
+b {
+  @apply 
+    dark:text-white
+  ;
 }

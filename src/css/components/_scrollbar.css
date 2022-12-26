@@ -6,5 +6,7 @@
   @apply 
     bg-muted rounded
     hover:bg-brand
+    dark:bg-muted-darkmode
+    dark:hover:bg-brand
   ;
 }

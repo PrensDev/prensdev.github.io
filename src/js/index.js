@@ -18,14 +18,33 @@
   const setLightMode = _ => htmlClassList.remove('dark');
   const setDarkMode = _ => htmlClassList.add('dark');
 
+  // Display Mode Toggler
+  const displayModeToggler_btn = document.querySelector(`[data-toggle="displayMode"]`)
+
   const setDisplayMode = mode => {
     sessionStorage.setItem(COOKIES.DISPLAY_MODE, mode);
-    ({
-      'MEDIA': window.matchMedia('(prefers-color-scheme: dark)').matches 
-        ? setDarkMode : setLightMode,
-      'LIGHT': setLightMode,
-      'DARK': setDarkMode
-    })[getDisplayMode()]();
+    const currDisplayMode = getDisplayMode();
+    const modes = {
+      'MEDIA': {
+        changeMode: window.matchMedia('(prefers-color-scheme: dark)').matches 
+          ? setDarkMode 
+          : setLightMode,
+        icon: window.matchMedia('(prefers-color-scheme: dark)').matches 
+          ? `<i class="fa-solid fa-sun"></i>`
+          : `<i class="fa-solid fa-moon"></i>`
+      },
+      'LIGHT': {
+        changeMode: setLightMode,
+        icon: `<i class="fa-solid fa-moon"></i>`
+      },
+      'DARK': {
+        changeMode: setDarkMode,
+        icon: `<i class="fa-solid fa-sun"></i>`,
+      }
+    }
+    const { changeMode, icon } = modes[currDisplayMode];
+    changeMode();
+    displayModeToggler_btn.innerHTML = icon;
   }
 
   // On load
@@ -45,16 +64,23 @@
     });
 
   // On display media mode toggle
-  let displayModeToggler_btn = document.querySelector(`[data-toggle="displayMode"]`)
   displayModeToggler_btn.addEventListener('click', e => {
     e.preventDefault();
-    let newDisplayMode = ({
-      'MEDIA': () => 'LIGHT',
-      'LIGHT': () => 'DARK',
-      'DARK': () => window.matchMedia ? 'MEDIA' : 'LIGHT',
-    })[getDisplayMode()]();
-    setDisplayMode(newDisplayMode);
-    displayModeToggler_btn.innerHTML = newDisplayMode;
+    const currDisplayMode = getDisplayMode();
+    const { next } = ({
+      'MEDIA': {
+        next: window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'LIGHT' 
+          : 'DARK',
+      },
+      'LIGHT': {
+        next: 'DARK',
+      },
+      'DARK': {
+        next: 'LIGHT',
+      },
+    })[currDisplayMode];
+    setDisplayMode(next);
   })
 
   // * For Topbar Links

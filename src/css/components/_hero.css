@@ -1,6 +1,7 @@
 .hero {
   @apply 
-    py-32 px-6 flex items-center justify-center bg-gradient-to-r from-white via-gray-100 to-white;
+    py-32 px-6 flex items-center justify-center bg-gradient-to-r from-white via-gray-100 to-white
+    dark:from-body-darkmode dark:via-body-darkmode-darker dark:to-body-darkmode  
   ;
 
   .avatar-container {
@@ -11,10 +12,15 @@
 
   .avatar {
     @apply
-      w-40 h-40 rounded-full ring-4 ring-muted ring-offset-8 mb-5
-      sm:w-52 sm:h-52
-      hover:ring-brand
+      flex items-center justify-center rounded-full border-4 border-muted mb-5 w-56 h-56
+      hover:border-brand
+      dark:bg-body-darkmode dark:border-muted-darkmode
+      dark:hover:border-brand
     ;
+
+    .avatar-img {
+      @apply w-48 h-48 rounded-full;
+    }
   }
 
   .heading {
@@ -26,8 +32,9 @@
 
   .role {
     @apply
-      font-light text-center
+      font-light text-center text-muted
       md:text-2xl
+      dark:text-muted-darkmode
     ;
   }
 }
