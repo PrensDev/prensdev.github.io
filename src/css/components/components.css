@@ -1,9 +1,11 @@
 @import "./_scrollbar.css";
+@import "./_loader.css";
 @import "./_badges.css";
 @import "./_buttons.css";
 @import "./_tabs.css";
 @import "./_topbar.css";
 @import "./_hero.css";
 @import "./_section.css";
+@import "./_about.css";
 @import "./_projects.css";
 @import "./_footer.css";

@@ -136,9 +136,15 @@
     elem.addEventListener('click', e => {
       e.preventDefault();
       if(elem.classList.contains('active')) return;
-      navTabs.querySelectorAll('.tab-link').forEach(link => link.classList.contains('active') && link.classList.remove('active'));
+      navTabs.querySelectorAll('.tab-link').forEach(link => {
+        if (!link.classList.contains('active')) return;
+        link.classList.remove('active');
+      });
       elem.classList.add('active');
-      tabContent.querySelectorAll('.tab-pane').forEach(pane => pane.classList.contains('show') && pane.classList.remove('show'));
+      tabContent.querySelectorAll('.tab-pane').forEach(pane => {
+        if(!pane.classList.contains('show')) return; 
+        pane.classList.remove('show');
+      });
       dataTarget.classList.add('show');
     });
   });
@@ -156,6 +162,15 @@
   // * For footer
 
   document.querySelector(`[data-content="creditYear"]`).innerHTML = (new Date()).getFullYear();
+
+  // * If page has been loaded
+  window.addEventListener('load', () => {
+    document.querySelector('.loader-container').classList.add('loaded');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  })
 })();
 
 

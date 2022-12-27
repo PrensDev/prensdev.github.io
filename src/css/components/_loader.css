@@ -1,0 +1,17 @@
+.loader-container {
+  @apply 
+    min-h-screen w-screen flex justify-center items-center fixed z-50 top-0 left-0 overflow-y-hidden overflow-x-hidden bg-white backdrop-blur-lg bg-opacity-25
+    dark:bg-body-darkmode dark:backdrop-blur-lg dark:bg-opacity-25
+  ;
+
+  &.loaded {
+    @apply hidden;
+  }
+
+  .loader-spinner {
+    @apply 
+      h-16 w-16 block rounded-full border-4 border-transparent border-t-brand animate-spin
+      dark:border-t-brand-darker
+    ;
+  }
+}
