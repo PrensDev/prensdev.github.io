@@ -1178,8 +1178,8 @@ body {
   color: rgb(2 132 199 / var(--tw-text-opacity));
 }
 .section-subheader {
-  margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+  margin-top: 3rem;
   text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1541,14 +1541,6 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:text-center {
     text-align: center;
   }
@@ -1561,5 +1553,15 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+@media (min-width: 1024px) {
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 }
