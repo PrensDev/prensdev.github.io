@@ -3,6 +3,20 @@
     bg-gray-100 
     dark:bg-body-darkmode-darker
   ;
+
+  .featured {
+    @apply 
+      text-brand font-extrabold text-sm
+      dark:text-brand-darker
+    ;
+  
+    i, .fas-solid {
+      @apply 
+        text-brand mr-1
+        dark:text-brand-darker
+      ;
+    }
+  }
 }
 
 .project-item {
@@ -24,20 +38,6 @@
 
     .project-preview-container {
       @apply lg:order-2
-    }
-  }
-
-  .featured {
-    @apply 
-      text-brand font-extrabold text-sm
-      dark:text-brand-darker
-    ;
-  
-    i, .fas-solid {
-      @apply 
-        text-brand mr-1
-        dark:text-brand-darker
-      ;
     }
   }
   
@@ -62,8 +62,9 @@
   
   .project-preview {
     @apply 
-      w-full h-full rounded-lg shadow-lg
+      w-full h-full rounded-lg shadow-lg duration-300
       lg:w-5/6
+      lg:hover:scale-105 lg:hover:duration-150
     ;
   }
 }
