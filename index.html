@@ -20,21 +20,21 @@
 </head>
 <body>
   <noscript>
-  <div class="noscript-container">
-    <div class="inline-block p-10 rounded">
-      <p class="text-center text-xl">My site requires some <b>JavaScript</b>.</p>
-      <p class="text-center text-xl">Please <b>enable</b> it for better experience.</p>
+    <div class="noscript-container">
+      <div class="inline-block p-10 rounded">
+        <p class="text-center text-xl">My site requires some <b>JavaScript</b>.</p>
+        <p class="text-center text-xl">Please <b>enable</b> it for better experience.</p>
+      </div>
+    </div>
+  </noscript>
+    <div class="loader-container">
+    <div>
+      <div class="flex justify-center align-center">
+        <span class="loader-spinner"></span>
+      </div>
+      <p class="text-center text-xl mt-3">Loading...</p>
     </div>
   </div>
-</noscript>
-  <div class="loader-container">
-  <div>
-    <div class="flex justify-center align-center">
-      <span class="loader-spinner"></span>
-    </div>
-    <p class="text-center text-xl mt-3">Loading...</p>
-  </div>
-</div>
 
   <main>
     <nav class="topbar">
@@ -51,7 +51,7 @@
       <a class="topbar-link" draggable="false" href="#about">About</a>
       <a class="topbar-link" draggable="false" href="#projects">Projects</a>
       <a class="topbar-link" draggable="false" href="#contact">Contact</a>
-      <a class="btn" draggable="false" href="./resume.pdf" target="_blank">
+      <a class="btn" draggable="false" href="./resume.pdf" target="_blank" title="Last updated January 2023">
         Resume
         <i class="fa-solid fa-file-lines ml-1"></i>
       </a>
@@ -136,9 +136,20 @@
           
           <div class="tab-pane show" id="career-pane">
             <div class="pane-section">
+              <div class="pane-section-title">Junior Software Engineer</div>
+              <div class="pane-section-subtitle">SpinifexIT Philippines Inc. @ Taguig City, Metro Manila, Philippines</div>
+              <div class="pane-section-subtitle">February 2023 - Present</div>
+
+              <ul class="pane-section-description-list">
+                <li>Acquired basic knowledge and skills regarding SAP HCM (Human Capital Management)</li>
+                <li>Develop web products using SAPUI5 framework</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
               <div class="pane-section-title">Software Developer and Tester (Intern)</div>
               <div class="pane-section-subtitle">SuRe Procurement @ New South Wales, Australia</div>
-              <div class="pane-section-subtitle">April 2022 - Present</div>
+              <div class="pane-section-subtitle">April 2022 - March 2023</div>
 
               <ul class="pane-section-description-list">
                 <li>Wrote test cases, performed manual testing and documentation, and submitted bug reports to software developers.</li>
@@ -195,6 +206,9 @@
 
               <div class="pane-section-subtitle mt-2">Libraries & Frameworks</div>
               <div class="skills skills-tech-stack">
+                <i>
+                  <img draggable="false" src="public/icons/sap-icon.svg" />
+                </i>
                 <i class="devicon-express-original"></i>
                 <i class="devicon-sequelize-plain colored"></i>
                 <i class="devicon-codeigniter-plain colored"></i>
@@ -202,7 +216,8 @@
               </div>
               <ul class="pane-section-description-list">
                 <li>I extend my knowledge by learning about different common libraries and frameworks to speed up development, use already available technologies for specific problems, and lessen the effort of reproducing source codes, which effectively reduces time and cost in developing web applications.</li>
-                <li>Knowledgeable in Express, Sequelize ORM, CodeIgniter, FastAPI</li>
+                <li>Knowledgeable in SAPUI5 Framework</li>
+                <li>Knowledgeable in SAPUI5, Express, Sequelize ORM, CodeIgniter, FastAPI</li>
               </ul>
 
               <div class="pane-section-subtitle mt-2">Computer Programming</div>
