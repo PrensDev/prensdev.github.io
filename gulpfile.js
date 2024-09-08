@@ -14,7 +14,10 @@ const compileHTMLTask = () => {
   return src([HTML_SOURCE_PATH + 'index.html'])
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file'
+      basepath: '@file',
+      context: {
+        dev: 'PrensDev'
+      }
     }))
     .pipe(dest('./'))
 }

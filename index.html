@@ -21,9 +21,14 @@
 <body>
   <noscript>
   <div class="noscript-container">
-    <div class="inline-block p-10 rounded">
-      <p class="text-center text-xl">My site requires some <b>JavaScript</b>.</p>
-      <p class="text-center text-xl">Please <b>enable</b> it for better experience.</p>
+    <div>
+      <div class="noscript-illustration px-2">
+        <img class="w-4/6 md:w-1/2" src="./public/img/noscript.svg" alt="PrensDev" draggable="false">
+      </div>
+      <div class="p-10">
+        <p class="text-center md:text-xl">My site requires <b>JavaScript</b> to run.</p>
+        <p class="text-center md:text-xl">Kindly <b>enable</b> it for better experience.</p>
+      </div>
     </div>
   </div>
 </noscript>
@@ -64,14 +69,9 @@
     <section class="hero">
   <div>
     <div class="avatar-container">
-      <div class="avatar" >
-        <img 
-          class="avatar-img" 
-          src="./public/img/avatar.jpg" 
-          alt="A selfie of PrensDev" 
-          title="Hi, I am PrensDev!"
-          draggable="false"
-        />
+      <div class="avatar">
+        <img class="avatar-img" src="./public/img/avatar.jpg" alt="A selfie of PrensDev" title="Hi, I am PrensDev!"
+          draggable="false" />
       </div>
     </div>
 
@@ -85,20 +85,18 @@
   <i class="fa-solid fa-user-tie mr-1"></i>
   Me, Myself, and I
 </h2>
-  
+
     <div class="grid md:grid-cols-2 gap-4 mb-5">
       <div class="flex justify-center md:order-2">
-        <img 
-          class="w-4/6" 
-          src="./public/img/programming.svg" 
-          alt="Image of PrensDev" 
-          draggable="false"
-        >
+        <img class="w-4/6" src="./public/img/programming.svg" alt="PrensDev" draggable="false">
       </div>
       <div class="md:text-center">
         <p class="about-paragraph">Hello World! My name is <b>Jetsun Prince Torres</b>.</p>
-        <p class="about-paragraph">I am a <b>Filipino Software Developer</b>, <b>Full-Stack Web Developer</b>, <b>Computer Programmer</b>, and interested in <b>UI/UX designing</b>.</p>
-        <p class="about-paragraph">I built web applications and technologies that are innovative, modern, creative, and integrative which provide solutions for the real-world problem</p>
+        <p class="about-paragraph">I am a <b>Filipino Software Developer</b>, <b>Full-Stack Web Developer</b>,
+          <b>Computer Programmer</b>, and interested in <b>UI/UX designing</b>.
+        </p>
+        <p class="about-paragraph">I built web applications and technologies that are innovative, modern, creative, and
+          integrative which provide solutions for the real-world problem</p>
         <p class="about-paragraph">I love to create websites that are user-friendly but professional looking.</p>
         <p class="about-paragraph">I love to code in <b>JavaScript</b>!</p>
       </div>
@@ -109,57 +107,59 @@
     <div class="my-5 flex justify-center">
       <div class="tab-container w-full md:w-4/6">
         <div class="tab-links">
-          <div class="tab-item" role="presentation">
-            <div 
-              class="tab-link active" 
-              data-toggle="tab"
-              data-target="#career-pane"
-            >Career</div>
+          <div class="tab-item">
+            <div class="tab-link active" data-toggle="tab" data-target="#career-pane">Career</div>
           </div>
-          <div class="tab-item" role="presentation">
-            <div 
-              class="tab-link"
-              data-toggle="tab"
-              data-target="#skills-pane"
-            >Skills</div>
+          <div class="tab-item">
+            <div class="tab-link" data-toggle="tab" data-target="#skills-pane">Skills</div>
           </div>
-          <div class="tab-item" role="presentation">
-            <div 
-              class="tab-link"
-              data-toggle="tab"
-              data-target="#education-pane"
-            >Education</div>
+          <div class="tab-item">
+            <div class="tab-link" data-toggle="tab" data-target="#education-pane">Education</div>
           </div>
         </div>
-  
+
         <div class="tab-panes">
-          
+
           <div class="tab-pane show" id="career-pane">
             <div class="pane-section">
-              <div class="pane-section-title">Software Developer and Tester (Intern)</div>
-              <div class="pane-section-subtitle">SuRe Procurement @ New South Wales, Australia</div>
-              <div class="pane-section-subtitle">April 2022 - Present</div>
+              <div class="pane-section-title">Junior Software Engineer</div>
+              <div class="pane-section-subtitle">SpinifexIT Philippines Inc. @ BGC Taguig City, Philippines</div>
+              <div class="pane-section-subtitle">February 2023 - Present</div>
 
               <ul class="pane-section-description-list">
-                <li>Wrote test cases, performed manual testing and documentation, and submitted bug reports to software developers.</li>
+                <li>Build features and applications with SAPUI5</li>
+              </ul>
+            </div>
+
+            <div class="pane-section">
+              <div class="pane-section-title">Software Developer and Tester - Intern</div>
+              <div class="pane-section-subtitle">SuRe Procurement @ New South Wales, Australia</div>
+              <div class="pane-section-subtitle">April 2022 - March 2023</div>
+
+              <ul class="pane-section-description-list">
+                <li>Wrote test cases, performed manual testing and documentation, and submitted bug reports to software
+                  developers.</li>
                 <li>Fixed software bugs and errors, improved user interface design, and developed new features.</li>
                 <li>Worked with a team to develop a mobile application version of a web application.</li>
               </ul>
             </div>
 
             <div class="pane-section">
-              <div class="pane-section-title">Lead Front-End Developer (Intern)</div>
-              <div class="pane-section-subtitle">Polytechnic University of the Philippines @ Quezon City, Metro Manila, Philippines</div>
+              <div class="pane-section-title">Lead Front-End Developer - Intern</div>
+              <div class="pane-section-subtitle">Polytechnic University of the Philippines @ Quezon City, Metro Manila,
+                Philippines</div>
               <div class="pane-section-subtitle">March - July 2022</div>
 
               <ul class="pane-section-description-list">
-                <li>Lead the developers of the project team in developing and implementing user-centered front-end features.</li>
+                <li>Lead the developers of the project team in developing and implementing user-centered front-end
+                  features.</li>
                 <li>Wrote and documented standards for user-interface design aligned with basic design principles.</li>
-                <li>Developed and maintained major front-end features, including handling user requests and data responses from the back-end.</li>
+                <li>Developed and maintained major front-end features, including handling user requests and data
+                  responses from the back-end.</li>
               </ul>
             </div>
           </div>
-          
+
           <div class="tab-pane" id="skills-pane">
             <div class="pane-section">
               <div class="pane-section-title">Technical Skills</div>
@@ -174,10 +174,13 @@
                 <i class="devicon-tailwindcss-plain colored"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>Have a wide understanding and experience in prototyping, designing, and building web pages with the use of markup languages, stylesheets and other tools.</li>
+                <li>Have a wide understanding and experience in prototyping, designing, and building web pages with the
+                  use of markup languages, stylesheets and other tools.</li>
                 <li>Have experience building web applications with the use of open-source templates and frameworks.</li>
-                <li>Built responsive and mobile-first web sites aligned with basic design principles and with user-friendly interface.</li>
-                <li>Knowledgeable in HTML, CSS, JavaScript, jQuery, Bootstrap, SASS, PostCSS, TailwindCSS, Adobe XD, and many more.</li>
+                <li>Built responsive and mobile-first web sites aligned with basic design principles and with
+                  user-friendly interface.</li>
+                <li>Knowledgeable in HTML, CSS, JavaScript, jQuery, Bootstrap, SASS, PostCSS, TailwindCSS, Adobe XD, and
+                  many more.</li>
               </ul>
 
               <div class="pane-section-subtitle mt-2">Back-End Development</div>
@@ -188,21 +191,26 @@
                 <i class="devicon-microsoftsqlserver-plain"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>Have experience in building the server-side of web applications, manage user requests, database, constructing APIs, and application logic</li>
-                <li>Have knowledge in implementing security of web applications and keeping the privacy and integrity of user data.</li>
+                <li>Have experience in building the server-side of web applications, manage user requests, database,
+                  constructing APIs, and application logic</li>
+                <li>Have knowledge in implementing security of web applications and keeping the privacy and integrity of
+                  user data.</li>
                 <li>Knowledgeable in NodeJS, PHP, MySQL, MS SQL, PostMan, and many more.</li>
               </ul>
 
               <div class="pane-section-subtitle mt-2">Libraries & Frameworks</div>
               <div class="skills skills-tech-stack">
+                <i class="devicon-react-original"></i>
                 <i class="devicon-express-original"></i>
                 <i class="devicon-sequelize-plain colored"></i>
                 <i class="devicon-codeigniter-plain colored"></i>
                 <i class="devicon-fastapi-plain colored"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>I extend my knowledge by learning about different common libraries and frameworks to speed up development, use already available technologies for specific problems, and lessen the effort of reproducing source codes, which effectively reduces time and cost in developing web applications.</li>
-                <li>Knowledgeable in Express, Sequelize ORM, CodeIgniter, FastAPI</li>
+                <li>I extend my knowledge by learning about different common libraries and frameworks to speed up
+                  development, use already available technologies for specific problems, and lessen the effort of
+                  reproducing source codes, which effectively reduces time and cost in developing web applications.</li>
+                <li>Knowledgeable in React, React Native, Express, Sequelize ORM, CodeIgniter, FastAPI</li>
               </ul>
 
               <div class="pane-section-subtitle mt-2">Computer Programming</div>
@@ -214,7 +222,9 @@
                 <i class="devicon-java-plain colored"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>I made myself familiar with the fundamentals of computer programming, especially with the concept of data structures, algorithms, debugging, and object-oriented programming with different computer languages.</li>
+                <li>I made myself familiar with the fundamentals of computer programming, especially with the concept of
+                  data structures, algorithms, debugging, and object-oriented programming with different computer
+                  languages.</li>
                 <li>Knowledgeable in JavaScript, TypeScript, Python, C, Java.</li>
               </ul>
 
@@ -226,7 +236,8 @@
                 <i class="devicon-bitbucket-original colored"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>Have basic knowledge and experience in managing source codes using code editors and IDEs, and version control.</li>
+                <li>Have basic knowledge and experience in managing source codes using code editors and IDEs, and
+                  version control.</li>
                 <li>Knowledgeable in Git, Github, Bitbucket, Github Desktop.</li>
               </ul>
             </div>
@@ -240,7 +251,8 @@
                 <i class="devicon-confluence-original colored" title="Confluence"></i>
               </div>
               <ul class="pane-section-description-list">
-                <li>I worked with a different team that uses the approach of Agile methodology and uses productivity software to effectively keep track of and manage tasks.</li>
+                <li>I worked with a different team that uses the approach of Agile methodology and uses productivity
+                  software to effectively keep track of and manage tasks.</li>
                 <li>Knowledgeable in using Trello, Jira, Confluence, MS Office, Google Apps.</li>
               </ul>
 
@@ -253,13 +265,14 @@
               </ul>
             </div>
           </div>
-          
+
           <div class="tab-pane" id="education-pane">
             <div class="pane-section">
               <div class="pane-section-title">Polytechnic University of the Philippines</div>
-              <div class="pane-section-subtitle">Bachelor of Science in Information Technology @ Quezon City, Metro Manila</div>
+              <div class="pane-section-subtitle">Bachelor of Science in Information Technology @ Quezon City, Metro
+                Manila</div>
               <div class="pane-section-subtitle">2018 - 2022</div>
-              
+
               <ul class="pane-section-description-list">
                 <li>Magna Cum Laude</li>
                 <li>Consistent President's Lister</li>
@@ -291,7 +304,7 @@
       </div>
     </div>
 
-    
+
   </div>
 </section>
     <section class="section projects" id="projects">
@@ -300,17 +313,12 @@
   <i class="fa-solid fa-diagram-project"></i>
   Projects
 </h2>
-  
+
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true" 
-          alt="VaxxTrack Preview" 
-          title="VaxxTrack"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true"
+          alt="VaxxTrack Preview" title="VaxxTrack" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -318,45 +326,32 @@
           Featured Project
         </div>
         <div class="project-title">VaxxTrack & VaxxTrack API</div>
-        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, a citizen's health and vaccination status, available vaccines, and many more features.</p>
-      
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring
+          System. This handles the tracking, recording, and management of establishment visitors for automated contact
+          tracing, a citizen's health and vaccination status, available vaccines, and many more features.</p>
+
         <div class="tech-stack">
           <div class="badge">Bootstrap 4</div><div class="badge">CodeIgniter 3</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">Leaflet</div><div class="badge">Heatmap JS</div><div class="badge">PSGC API</div><div class="badge">HERE API</div><div class="badge">Node JS</div><div class="badge">Express JS</div><div class="badge">Sequelize ORM</div>
         </div>
-  
+
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/vaxxtrack" 
-            target="_blank" 
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack
           </a>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/vaxxtrack-api" 
-            target="_blank" 
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack API
           </a>
         </div>
-        
+
       </div>
     </div>
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" src="public\img\pupqc-epms\proposal.png" 
-          alt="PUPQC-EPMS Preview" 
-          title="PUPQC-EPMS"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview" src="public\img\pupqc-epms\proposal.png" alt="PUPQC-EPMS Preview"
+          title="PUPQC-EPMS" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -364,24 +359,23 @@
           Featured Project
         </div>
         <div class="project-title">PUPQC Extension Project Management System</div>
-        <p class="project-description">An Extension Project Management System for the PUP Quezon City Branch that addresses issues with extension projects for Extension Office transactions and includes features such as extension project proposal management, monitoring, activity evaluation, Memorandum of Agreements, and many more.</p>
-      
+        <p class="project-description">An Extension Project Management System for the PUP Quezon City Branch that
+          addresses issues with extension projects for Extension Office transactions and includes features such as
+          extension project proposal management, monitoring, activity evaluation, Memorandum of Agreements, and many
+          more.</p>
+
         <div class="tech-stack">
           <div class="badge">EJS</div><div class="badge">Bootstrap 4</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">Node JS</div><div class="badge">Express JS</div><div class="badge">Sequelize ORM</div>
         </div>
-        
+
       </div>
     </div>
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" src="public\img\recruitment-management-system\hiremngr-dashboard.png" 
-          alt="Hospital Recruitment Management System Preview" 
-          title="Hospital Recruitment Management System"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview" src="public\img\recruitment-management-system\hiremngr-dashboard.png"
+          alt="Hospital Recruitment Management System Preview" title="Hospital Recruitment Management System"
+          draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -389,25 +383,21 @@
           Capstone Project
         </div>
         <div class="project-title">Hospital Recruitment Management System</div>
-        <p class="project-description">A recruitment management system designed for a hospital. Features include management and tracking of Manpower Requests, Job Posts, Career Portal, Onboarding, and much more.</p>
-      
+        <p class="project-description">A recruitment management system designed for a hospital. Features include
+          management and tracking of Manpower Requests, Job Posts, Career Portal, Onboarding, and much more.</p>
+
         <div class="tech-stack">
           <div class="badge">Bootstrap 4</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">FastAPI</div>
         </div>
-        
+
       </div>
     </div>
-  
+
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" 
-          alt="ABN Job Portal Preview" 
-          title="ABN Job Portal"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true"
+          alt="ABN Job Portal Preview" title="ABN Job Portal" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -415,18 +405,14 @@
           Featured Project
         </div>
         <div class="project-title">ABN Job Portal</div>
-        <p class="project-description">A simple job portal web application that allows employers to post job vacancies and manage applicants, as well as jobseekers to find and submit applications.</p>
-      
+        <p class="project-description">A simple job portal web application that allows employers to post job vacancies
+          and manage applicants, as well as jobseekers to find and submit applications.</p>
+
         <div class="tech-stack">
           <div class="badge">Bootstrap 4</div><div class="badge">CodeIgniter 3</div><div class="badge">jQuery</div><div class="badge">Moment JS</div><div class="badge">MS SQL</div>
         </div>
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/ABN-Job-Portal" 
-            target="_blank"
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -436,14 +422,9 @@
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true" 
-          alt="MS Word Filipino Preview" 
-          title="MS Word Filipino"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true"
+          alt="MS Word Filipino Preview" title="MS Word Filipino" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -451,24 +432,20 @@
           Featured Project
         </div>
         <div class="project-title">MS Word Filipino</div>
-        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand English and technical terms when using Microsoft Word as a word processor.</p>
-      
+        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand
+          English and technical terms when using Microsoft Word as a word processor.</p>
+
         <div class="tech-stack">
           <div class="badge">HTML5</div><div class="badge">CSS3</div><div class="badge">PHP</div>
         </div>
-  
+
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/MSWordFilipino" 
-            target="_blank"
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/MSWordFilipino" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
         </div>
-        
+
       </div>
     </div>
 
@@ -481,19 +458,15 @@
           Research
         </div>
         <div class="other-project-item-title">PUP-SIS App</div>
-        <p class="other-project-item-description">A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
-      
+        <p class="other-project-item-description">A Mobile Application implemented with WebView for rendering PUP-SIS
+          (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
+
         <div class="tech-stack">
           <div class="badge">Flutter</div><div class="badge">Dart</div>
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/pupsis_app" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/pupsis_app" class="btn btn-github" draggable="false" target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -507,18 +480,13 @@
         </div>
         <div class="other-project-item-title">Paylight UI</div>
         <p class="other-project-item-description">A simple mobile banking wallet user-interface/prototype design.</p>
-      
+
         <div class="tech-stack">
           <div class="badge">Adobe XD</div>
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/PayLight-UI" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/PayLight-UI" class="btn btn-github" draggable="false" target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -531,19 +499,16 @@
           Information Security
         </div>
         <div class="other-project-item-title">enhanced-password-security</div>
-        <p class="other-project-item-description">A proposed implementation for enhancing password-based security with the application of hash function, salting, and peppering methods.</p>
-      
+        <p class="other-project-item-description">A proposed implementation for enhancing password-based security with
+          the application of hash function, salting, and peppering methods.</p>
+
         <div class="tech-stack">
           <div class="badge">JavaScript</div><div class="badge">Node JS</div><div class="badge">bcrypt</div>
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/enhanced-password-security" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/enhanced-password-security" class="btn btn-github" draggable="false"
+            target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -564,14 +529,15 @@
   <i class="fa-solid fa-phone-volume"></i>
   Want to reach me?
 </h2>
-    
+
       <div class="text-center text-4xl md:text-5xl font-extrabold mb-2 dark:text-white">Get in touch!</div>
-      
-      <p class="text-center md:text-xl text-muted dark:text-muted-darkmode">Do you have any concerns? Send me an email by clicking the link below. I will try my best to make respond!</p>
-    
+
+      <p class="text-center md:text-xl text-muted dark:text-muted-darkmode">Do you have any concerns? Send me an email
+        by clicking the link below. I will try my best to make respond!</p>
+
       <div class="text-center my-10">
         <a class="btn" href="mailto:jetsunprincetorres+portfolio@gmail.com" draggable="false" target="_blank">
-          Say hi! 
+          Say hi!
           <i class="fa-solid fa-hand ml-1"></i>
         </a>
       </div>
@@ -584,7 +550,7 @@
         <a class="btn-icon" href="https://www.linkedin.com/in/jetsunprince/" target="_blank" draggable="false">
           <i class="devicon-linkedin-plain"></i>
         </a>
-          
+
       </div>
     </div>
   </div>
@@ -598,11 +564,12 @@
     </div>
     <div class="footer-right">
       <p class="text-sm">
-        Designed and build by myself with 
-        <a href="https://tailwindcss.com/" target="_blank" draggable="false">TailwindCSS</a>, 
-        <a href="https://fontawesome.com/" target="_blank" draggable="false">FontAwesome</a>, 
-        <a href="https://undraw.co/" target="_blank" draggable="false">unDraw</a> 
-        and <a href="https://devicon.dev/" target="_blank" draggable="false">Devicon</a>.</p>
+        Designed and build by myself with
+        <a href="https://tailwindcss.com/" target="_blank" draggable="false">TailwindCSS</a>,
+        <a href="https://fontawesome.com/" target="_blank" draggable="false">FontAwesome</a>,
+        <a href="https://undraw.co/" target="_blank" draggable="false">unDraw</a>
+        and <a href="https://devicon.dev/" target="_blank" draggable="false">Devicon</a>.
+      </p>
     </div>
     <div class="footer-right">
       <p class="text-sm">Happy Coding, Everyone!</p>

@@ -46,6 +46,9 @@ module.exports = {
           }
         }
       },
+      zIndex: {
+        '999': '999',
+      }
     },
   },
   plugins: [],

@@ -1,20 +1,15 @@
 <section class="section projects" id="projects">
   <div class="section-container">
     @@include('../components/section_header.html', {
-      "section_name": "Projects",
-      "icon": '<i class="fa-solid fa-diagram-project"></i>'
+    "section_name": "Projects",
+    "icon": '<i class="fa-solid fa-diagram-project"></i>'
     })
-  
+
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true" 
-          alt="VaxxTrack Preview" 
-          title="VaxxTrack"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/vaxxtrack/blob/main/public/images/screenshots/home.png?raw=true"
+          alt="VaxxTrack Preview" title="VaxxTrack" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -22,57 +17,44 @@
           Featured Project
         </div>
         <div class="project-title">VaxxTrack & VaxxTrack API</div>
-        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring System. This handles the tracking, recording, and management of establishment visitors for automated contact tracing, a citizen's health and vaccination status, available vaccines, and many more features.</p>
-      
+        <p class="project-description">A Corona Virus Disease 2019 (COVID-19) Contact Tracing App and Vaccine Monitoring
+          System. This handles the tracking, recording, and management of establishment visitors for automated contact
+          tracing, a citizen's health and vaccination status, available vaccines, and many more features.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "Bootstrap 4" },
-            { "name": "CodeIgniter 3" },
-            { "name": "jQuery" },
-            { "name": "Moment JS" },
-            { "name": "Leaflet" },
-            { "name": "Heatmap JS" },
-            { "name": "PSGC API" },
-            { "name": "HERE API" },
-            { "name": "Node JS" },
-            { "name": "Express JS" },
-            { "name": "Sequelize ORM" },
+          { "name": "Bootstrap 4" },
+          { "name": "CodeIgniter 3" },
+          { "name": "jQuery" },
+          { "name": "Moment JS" },
+          { "name": "Leaflet" },
+          { "name": "Heatmap JS" },
+          { "name": "PSGC API" },
+          { "name": "HERE API" },
+          { "name": "Node JS" },
+          { "name": "Express JS" },
+          { "name": "Sequelize ORM" },
           ])
         </div>
-  
+
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/vaxxtrack" 
-            target="_blank" 
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/vaxxtrack" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack
           </a>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/vaxxtrack-api" 
-            target="_blank" 
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/vaxxtrack-api" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Vaxxtrack API
           </a>
         </div>
-        
+
       </div>
     </div>
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" src="public\img\pupqc-epms\proposal.png" 
-          alt="PUPQC-EPMS Preview" 
-          title="PUPQC-EPMS"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview" src="public\img\pupqc-epms\proposal.png" alt="PUPQC-EPMS Preview"
+          title="PUPQC-EPMS" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -80,32 +62,31 @@
           Featured Project
         </div>
         <div class="project-title">PUPQC Extension Project Management System</div>
-        <p class="project-description">An Extension Project Management System for the PUP Quezon City Branch that addresses issues with extension projects for Extension Office transactions and includes features such as extension project proposal management, monitoring, activity evaluation, Memorandum of Agreements, and many more.</p>
-      
+        <p class="project-description">An Extension Project Management System for the PUP Quezon City Branch that
+          addresses issues with extension projects for Extension Office transactions and includes features such as
+          extension project proposal management, monitoring, activity evaluation, Memorandum of Agreements, and many
+          more.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "EJS" },
-            { "name": "Bootstrap 4" },
-            { "name": "jQuery" },
-            { "name": "Moment JS" },
-            { "name": "Node JS" },
-            { "name": "Express JS" },
-            { "name": "Sequelize ORM" },
+          { "name": "EJS" },
+          { "name": "Bootstrap 4" },
+          { "name": "jQuery" },
+          { "name": "Moment JS" },
+          { "name": "Node JS" },
+          { "name": "Express JS" },
+          { "name": "Sequelize ORM" },
           ])
         </div>
-        
+
       </div>
     </div>
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" src="public\img\recruitment-management-system\hiremngr-dashboard.png" 
-          alt="Hospital Recruitment Management System Preview" 
-          title="Hospital Recruitment Management System"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview" src="public\img\recruitment-management-system\hiremngr-dashboard.png"
+          alt="Hospital Recruitment Management System Preview" title="Hospital Recruitment Management System"
+          draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -113,30 +94,26 @@
           Capstone Project
         </div>
         <div class="project-title">Hospital Recruitment Management System</div>
-        <p class="project-description">A recruitment management system designed for a hospital. Features include management and tracking of Manpower Requests, Job Posts, Career Portal, Onboarding, and much more.</p>
-      
+        <p class="project-description">A recruitment management system designed for a hospital. Features include
+          management and tracking of Manpower Requests, Job Posts, Career Portal, Onboarding, and much more.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "Bootstrap 4" },
-            { "name": "jQuery" },
-            { "name": "Moment JS" },
-            { "name": "FastAPI" },
+          { "name": "Bootstrap 4" },
+          { "name": "jQuery" },
+          { "name": "Moment JS" },
+          { "name": "FastAPI" },
           ])
         </div>
-        
+
       </div>
     </div>
-  
+
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true" 
-          alt="ABN Job Portal Preview" 
-          title="ABN Job Portal"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/ABN-Job-Portal/blob/main/screenshots/Home%20Page%20-%20Hero.png?raw=true"
+          alt="ABN Job Portal Preview" title="ABN Job Portal" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -144,24 +121,20 @@
           Featured Project
         </div>
         <div class="project-title">ABN Job Portal</div>
-        <p class="project-description">A simple job portal web application that allows employers to post job vacancies and manage applicants, as well as jobseekers to find and submit applications.</p>
-      
+        <p class="project-description">A simple job portal web application that allows employers to post job vacancies
+          and manage applicants, as well as jobseekers to find and submit applications.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "Bootstrap 4" },
-            { "name": "CodeIgniter 3" },
-            { "name": "jQuery" },
-            { "name": "Moment JS" },
-            { "name": "MS SQL" },
+          { "name": "Bootstrap 4" },
+          { "name": "CodeIgniter 3" },
+          { "name": "jQuery" },
+          { "name": "Moment JS" },
+          { "name": "MS SQL" },
           ])
         </div>
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/ABN-Job-Portal" 
-            target="_blank"
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/ABN-Job-Portal" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -171,14 +144,9 @@
 
     <div class="project-item">
       <div class="project-preview-container">
-        <img 
-          class="project-preview" 
-          src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true" 
-          alt="MS Word Filipino Preview" 
-          title="MS Word Filipino"
-          draggable="false"
-          loading="lazy"
-        >
+        <img class="project-preview"
+          src="https://github.com/PrensDev/MSWordFilipino/blob/main/screenshots/home.png?raw=true"
+          alt="MS Word Filipino Preview" title="MS Word Filipino" draggable="false" loading="lazy">
       </div>
       <div class="project-details">
         <div class="featured">
@@ -186,28 +154,24 @@
           Featured Project
         </div>
         <div class="project-title">MS Word Filipino</div>
-        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand English and technical terms when using Microsoft Word as a word processor.</p>
-      
+        <p class="project-description">A static website designed to help Filipinos who find it difficult to understand
+          English and technical terms when using Microsoft Word as a word processor.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "HTML5" },
-            { "name": "CSS3" },
-            { "name": "PHP" },
+          { "name": "HTML5" },
+          { "name": "CSS3" },
+          { "name": "PHP" },
           ])
         </div>
-  
+
         <div>
-          <a 
-            class="btn btn-github" 
-            href="https://github.com/PrensDev/MSWordFilipino" 
-            target="_blank"
-            draggable="false"
-          >
+          <a class="btn btn-github" href="https://github.com/PrensDev/MSWordFilipino" target="_blank" draggable="false">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
         </div>
-        
+
       </div>
     </div>
 
@@ -220,22 +184,18 @@
           Research
         </div>
         <div class="other-project-item-title">PUP-SIS App</div>
-        <p class="other-project-item-description">A Mobile Application implemented with WebView for rendering PUP-SIS (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
-      
+        <p class="other-project-item-description">A Mobile Application implemented with WebView for rendering PUP-SIS
+          (Polytechnic University of the Philippines' Student Information System) for mobile devices.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "Flutter" },
-            { "name": "Dart" },
+          { "name": "Flutter" },
+          { "name": "Dart" },
           ])
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/pupsis_app" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/pupsis_app" class="btn btn-github" draggable="false" target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -249,20 +209,15 @@
         </div>
         <div class="other-project-item-title">Paylight UI</div>
         <p class="other-project-item-description">A simple mobile banking wallet user-interface/prototype design.</p>
-      
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "Adobe XD" },
+          { "name": "Adobe XD" },
           ])
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/PayLight-UI" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/PayLight-UI" class="btn btn-github" draggable="false" target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>
@@ -275,23 +230,20 @@
           Information Security
         </div>
         <div class="other-project-item-title">enhanced-password-security</div>
-        <p class="other-project-item-description">A proposed implementation for enhancing password-based security with the application of hash function, salting, and peppering methods.</p>
-      
+        <p class="other-project-item-description">A proposed implementation for enhancing password-based security with
+          the application of hash function, salting, and peppering methods.</p>
+
         <div class="tech-stack">
           @@loop('../components/badge.html', [
-            { "name": "JavaScript" },
-            { "name": "Node JS" },
-            { "name": "bcrypt" },
+          { "name": "JavaScript" },
+          { "name": "Node JS" },
+          { "name": "bcrypt" },
           ])
         </div>
 
         <div>
-          <a 
-            href="https://github.com/PrensDev/enhanced-password-security" 
-            class="btn btn-github"
-            draggable="false"
-            target="_blank"
-          >
+          <a href="https://github.com/PrensDev/enhanced-password-security" class="btn btn-github" draggable="false"
+            target="_blank">
             <i class="devicon-github-original mr-1"></i>
             Check this repo
           </a>

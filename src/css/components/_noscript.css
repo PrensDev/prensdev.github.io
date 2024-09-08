@@ -1,3 +1,7 @@
 .noscript-container {
-  @apply min-h-screen w-screen flex justify-center items-center fixed z-50 top-0 left-0 overflow-y-hidden overflow-x-hidden bg-white backdrop-blur-lg bg-opacity-25;
+  @apply min-h-dvh w-dvw flex justify-center items-center fixed z-[999] top-0 left-0 overflow-y-hidden overflow-x-hidden bg-white backdrop-blur-md bg-opacity-25;
+
+  .noscript-illustration {
+    @apply flex justify-center items-center;
+  }
 }

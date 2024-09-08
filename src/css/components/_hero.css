@@ -1,7 +1,7 @@
 .hero {
   @apply 
     py-32 px-6 flex items-center justify-center bg-gradient-to-r from-white via-gray-100 to-white
-    dark:from-body-darkmode dark:via-body-darkmode-darker dark:to-body-darkmode  
+    dark:from-body-darkmode dark:via-body-darkmode-darker dark:to-body-darkmode
   ;
 
   .avatar-container {
