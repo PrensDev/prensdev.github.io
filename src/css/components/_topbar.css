@@ -1,36 +1,27 @@
 .topbar {
-  @apply
-    sticky top-0 shadow bg-white backdrop-blur bg-opacity-75 z-50
-    dark:bg-body-darkmode dark:backdrop-blur dark:bg-opacity-75
-  ;
+  @apply sticky top-0 shadow bg-white backdrop-blur bg-opacity-75 z-50
+    dark:bg-body-darkmode dark:backdrop-blur dark:bg-opacity-75;
 
   .topbar-container {
-    @apply
-      container mx-auto py-2 px-6 grid grid-cols-4
-    ;
+    @apply container mx-auto py-2 px-6 grid grid-cols-4;
   }
 
   .topbar-brand {
     .brand {
-      @apply 
-        font-mono text-brand font-black text-xl flex justify-between items-center h-full
-        dark:text-brand-darker
-      ;
+      @apply font-mono text-brand font-black text-xl flex justify-between items-center h-full
+        dark:text-brand-darker;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
   }
 
   .topbar-toggler {
-    @apply 
-      col-span-3 text-right
-      md:hidden
-    ;
+    @apply col-span-3 text-right
+      md:hidden;
   }
 
   .topbar-links {
-    @apply 
-      hidden col-span-4
-      md:block md:col-span-3 md:text-right
-    ;
+    @apply hidden col-span-4
+      md:block md:col-span-3 md:text-right;
 
     &.show {
       @apply block;
@@ -38,14 +29,12 @@
   }
 
   .topbar-link {
-    @apply 
-      block font-semibold px-4 py-2 text-muted
+    @apply block font-semibold px-4 py-2 text-muted
       md:inline-block
       hover:text-typo
       active:translate-y-px
       dark:text-muted-darkmode
-      dark:hover:text-white
-    ;
+      dark:hover:text-white;
 
     &.active {
       @apply text-brand;

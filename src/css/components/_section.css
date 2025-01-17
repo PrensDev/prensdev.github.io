@@ -7,23 +7,23 @@
 }
 
 .section-header {
-  @apply 
-    text-center text-2xl font-bold my-6
+  @apply text-center text-2xl font-bold my-6
     md:text-4xl
-    dark:text-white
-  ;
+    dark:text-white;
 
-  i, .fas-solid {
-    @apply 
-      text-brand mr-2
-      dark:text-brand-darker
-    ;
+  i,
+  .fas-solid {
+    @apply text-brand mr-2
+      dark:text-brand-darker;
   }
 }
 
+.section-header-subtitle {
+  @apply text-base text-center mb-6;
+}
+
 .section-subheader {
-  @apply 
-    text-xl font-bold text-center my-5 mt-12
+  @apply text-xl font-bold text-center my-5 mt-12
     md:text-3xl
-    dark:text-white
+    dark:text-white;
 }
